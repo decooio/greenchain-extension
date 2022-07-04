@@ -84,7 +84,7 @@ export default class CrustApp extends Component {
           >
             {/* <div className="crust-row">
               <CrustLogo className="crust-logo" />
-              <div className="crust-header-text">Crust Wallet</div>
+              <div className="crust-header-text">GreenChain Wallet</div>
             </div> */}
             <div className={CrustConfigClassNames}>
               {!isOfflineMode && (

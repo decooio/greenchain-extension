@@ -16,7 +16,7 @@ export default class TermsText extends Component {
           <li className="c1 c3">
             <span>API Consulting dba Crust Network </span>
             <span>
-              provides Crust Wallet as a platform for managing Polkadot Network accounts, and
+              provides GreenChain Wallet as a platform for managing Polkadot Network accounts, and
               allowing ordinary websites to interact with the Polkadot Network, while keeping the
               user in control over what transactions they approve, through our website located at
             </span>
@@ -99,7 +99,7 @@ export default class TermsText extends Component {
           </li>
           <li className="c1 c3">
             <span className="c0">
-              Crust Wallet is a global platform and by accessing the Content or Services, you
+              GreenChain Wallet is a global platform and by accessing the Content or Services, you
               are representing and warranting that, you are of the legal age of majority in your
               jurisdiction as is required to access such Services and Content and enter into
               arrangements as provided by the Service. You further represent that you are otherwise
@@ -123,7 +123,7 @@ export default class TermsText extends Component {
         <ol className="c7 lst-kix_f407rd3ximl-0 start" start="1">
           <li className="c1 c3">
             <span className="c0">
-              When setting up an account within Crust Wallet, you will be responsible for
+              When setting up an account within GreenChain Wallet, you will be responsible for
               keeping your own account secrets, which may be a twelve-word mnemonic, an account
               file, or other locally stored secret information.
               {' '}
@@ -132,16 +132,16 @@ export default class TermsText extends Component {
           </li>
           <li className="c1 c3">
             <span>
-              Crust Wallet encrypts this information locally with a password you provide, that
+              GreenChain Wallet encrypts this information locally with a password you provide, that
               we never send to our servers. You agree to (a) never use the same password for
-              Crust Wallet &nbsp;that you have ever used outside of this service; (b) keep your
+              GreenChain Wallet &nbsp;that you have ever used outside of this service; (b) keep your
               secret information and password confidential and do not share them with anyone else;
               {' '}
             </span>
             <span>(c)</span>
             <span className="c0">
-              &nbsp; immediately notify Crust Wallet of any unauthorized use of your account or
-              breach of security. Crust Wallet cannot and will not be liable for any loss or
+              &nbsp; immediately notify GreenChain Wallet of any unauthorized use of your account or
+              breach of security. GreenChain Wallet cannot and will not be liable for any loss or
               damage arising from your failure to comply with this section.
             </span>
           </li>
@@ -225,7 +225,7 @@ export default class TermsText extends Component {
         </p>
         <p className="c1">
           <span className="c0">
-            Crust Wallet &nbsp;and the Polkadot Network could be impacted by one or more
+            GreenChain Wallet &nbsp;and the Polkadot Network could be impacted by one or more
             regulatory inquiries or regulatory action, which could impede or limit the ability of
             Crust Network to continue to develop, or which could impede or limit your ability to
             access or use the Service or the Polkadot Network blockchain.
@@ -294,7 +294,7 @@ export default class TermsText extends Component {
             acknowledge and represent that Polkadot Network applications can be written maliciously
             or negligently, that Crust Network and Polkadot Network cannot be held liable for your
             interaction with such applications and that such applications may cause the loss of
-            property or even identity. This warning and others later provided by Crust Wallet,
+            property or even identity. This warning and others later provided by GreenChain Wallet,
             Crust Network, and the Polkadot Network &nbsp;in no way evidence or represent an on-going
             duty to alert you to all of the potential risks of utilizing the Service or Content.
           </span>
@@ -317,9 +317,9 @@ export default class TermsText extends Component {
             costs (including attorneys&rsquo; fees and court costs) claims or actions of any kind
             whatsoever arising or resulting from your use of the Service, your violation of these
             Terms of Use, and any of your acts or omissions that implicate publicity rights,
-            defamation or invasion of privacy. Crust Wallet &nbsp;reserves the right, at its
+            defamation or invasion of privacy. GreenChain Wallet &nbsp;reserves the right, at its
             own expense, to assume exclusive defense and control of any matter otherwise subject to
-            indemnification by you and, in such case, you agree to cooperate with Crust Wallet
+            indemnification by you and, in such case, you agree to cooperate with GreenChain Wallet
             &nbsp;in the defense of such matter.
           </span>
         </p>
@@ -353,12 +353,12 @@ export default class TermsText extends Component {
             <span className="c0">
               You acknowledge and agree that your use of the site and service is at your own risk.
               Recognizing such, you understand and agree that, to the fullest extent permitted by
-              applicable law, neither Crust Wallet nor its Suppliers or Licensors will be
+              applicable law, neither GreenChain Wallet nor its Suppliers or Licensors will be
               liable to you for any direct, indirect, incidental, special, consequential, punitive,
               exemplary, or other damages of any kind, including without limitation damages for loss
               of profits, goodwill, use, data or other tangible and intangible losses or any other
               damages based on contract, tort, strict liability, or any other theory (even if
-              Crust Wallet had been advised of the possibility of such damages), resulting from
+              GreenChain Wallet had been advised of the possibility of such damages), resulting from
               the site or service; the use or inability to use the site or service; unauthorized
               access or alteration of your transmissions or data; statements or conduct of any third
               party on the site or service; any ;actions we we take or fail as a result of
@@ -417,7 +417,7 @@ export default class TermsText extends Component {
         </ol>
         <p className="c1 c5">
           <span className="c0">
-            Crust Wallet and Crust Network trademarks may not be used in connection with any
+            GreenChain Wallet and Crust Network trademarks may not be used in connection with any
             product or service that is unrelated to Crust Network in any manner that is likely to
             cause confusion among customers, or which disparages or discredits Crust Network. All
             other trademarks are not owed by Crust Network or its subsidiaries that appear on this
@@ -453,12 +453,12 @@ export default class TermsText extends Component {
         <p className="c1">
           <span className="c0">
             The Service provides, or third parties may provide, links to other World Wide Web or
-            accessible sites, applications or resources. Crust Wallet &nbsp;has no control over
-            such sites, applications and resources, you acknowledge and agree that Crust Wallet
+            accessible sites, applications or resources. GreenChain Wallet &nbsp;has no control over
+            such sites, applications and resources, you acknowledge and agree that GreenChain Wallet
             &nbsp;is not responsible for the availability of such external sites, applications or
             resources, and does not endorse and is not responsible or liable for any content,
             advertising, products or other materials on or available from such sites or resources.
-            You further acknowledge and agree that Crust Wallet &nbsp;shall not be responsible
+            You further acknowledge and agree that GreenChain Wallet &nbsp;shall not be responsible
             or liable, directly or indirectly, for any damage or loss caused or alleged to be caused
             by or in connection with use of or reliance on any such content, goods or services
             available on or through any such site or resource.
@@ -473,7 +473,7 @@ export default class TermsText extends Component {
         <p className="c1">
           <span>Crust Network</span>
           <span className="c0">
-            &nbsp; may terminate or suspend all or part of the Service and your Crust Wallet
+            &nbsp; may terminate or suspend all or part of the Service and your GreenChain Wallet
             access immediately, without prior notice or liability, if you breach any of the terms or
             conditions of the Terms. Upon termination of your access, your right to use the Service
             will immediately cease.
@@ -723,9 +723,9 @@ export default class TermsText extends Component {
         <p className="c1">
           <span className="c0">
             These Terms (and any additional terms, rules and conditions of participation that
-            Crust Wallet &nbsp;may post on the Service) constitute the entire agreement between
-            you and Crust Wallet &nbsp;with respect to the Service and supersedes any prior
-            agreements, oral or written, between you and Crust Wallet . In the event of a
+            GreenChain Wallet &nbsp;may post on the Service) constitute the entire agreement between
+            you and GreenChain Wallet &nbsp;with respect to the Service and supersedes any prior
+            agreements, oral or written, between you and GreenChain Wallet . In the event of a
             conflict between these Terms and the additional terms, rules and conditions of
             participation, the latter will prevail over the Terms to the extent of the conflict.
           </span>
@@ -741,7 +741,7 @@ export default class TermsText extends Component {
         </p>
         <p className="c1">
           <span className="c0">
-            The failure of Crust Wallet &nbsp;to exercise or enforce any right or provision of
+            The failure of GreenChain Wallet &nbsp;to exercise or enforce any right or provision of
             the Terms shall not constitute a waiver of such right or provision. If any provision of
             the Terms is found by an arbitrator or court of competent jurisdiction to be invalid,
             the Parties nevertheless agree that the arbitrator or court should endeavor to give

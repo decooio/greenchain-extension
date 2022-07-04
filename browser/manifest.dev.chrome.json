@@ -1,13 +1,13 @@
 {
-  "version": "2.0.2",
+  "version": "1.0.0",
   "background": {
     "page": "background.html"
   },
-  "name": "Crust Wallet",
+  "name": "GreenChain Wallet",
   "manifest_version": 2,
-  "description": "Crust Wallet",
+  "description": "GreenChain Wallet",
   "browser_action": {
-    "default_title": "Crust Wallet",
+    "default_title": "GreenChain Wallet",
     "default_popup": "popup.html"
   },
   "icons": {
