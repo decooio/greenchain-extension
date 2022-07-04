@@ -1,0 +1,13 @@
+.network-text {
+  font-size: 14px;
+  color: #191919;
+  margin: 4px 4px 4px 12px;
+}
+
+.network-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}

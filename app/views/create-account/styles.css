@@ -1,0 +1,40 @@
+.create-account-container {
+  height: 550px;
+  background: #fff;
+}
+
+.create-account-form {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding-top: 17px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.create-account-settings-import {
+  width: 328px;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+
+.create-account-settings {
+  width: 328px;
+  margin-top: 20px;
+  margin-left: 16px;
+}
+
+.create-account-button {
+  margin-left: 18px;
+}
+
+.create-account-btns {
+  display: grid;
+  position: absolute;
+  top: 487px
+}
+
+.dialog-msg {
+  font-family: PingFangSC-Regular, PingFang SC !important;
+  color: #111A34 !important;
+}
