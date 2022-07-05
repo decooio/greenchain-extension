@@ -38,8 +38,7 @@ module.exports = {
     chunkFilename: '[id].chunk.js',
   },
   plugins: [
-    new webpack.optimize.OccurrenceOrderPlugin(),
-    new webpack.IgnorePlugin(/[^/]+\/[\S]+.dev$/),
+    new webpack.IgnorePlugin({resourceRegExp: /[^/]+\/[\S]+.dev$/}),
     new MiniCssExtractPlugin({
       filename: '[name].[contenthash].css',
     }),
@@ -56,6 +55,14 @@ module.exports = {
       generateStatsFile: false,
       statsOptions: { source: false },
     }),
+    // Work around for Buffer is undefined:
+    // https://github.com/webpack/changelog-v5/issues/10
+    new webpack.ProvidePlugin({
+      Buffer: ['buffer', 'Buffer'],
+    }),
+    // new webpack.ProvidePlugin({
+    //   process: 'process/browser',
+    // }),
   ],
   // optimization: {
   //   splitChunks: {
@@ -65,10 +72,27 @@ module.exports = {
   // },
 
   resolve: {
+    alias: {
+      // https://github.com/facebook/react/issues/20235
+      // https://github.com/facebook/create-react-app/issues/11769
+      "react/jsx-dev-runtime": "react/jsx-dev-runtime.js",
+      "react/jsx-runtime": "react/jsx-runtime.js",
+    },
     extensions: ['*', '.js'],
+    fallback: {
+      "crypto": require.resolve("crypto-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "buffer": require.resolve("buffer")
+    }
+    // fallback: {
+    //   "crypto": false,
+    //   "stream": false
+    // }
   },
   node: {
-    fs: 'empty',
+    global: true,
+    __filename: false,
+    __dirname: false,
   },
   module: {
     rules: [
@@ -76,8 +100,8 @@ module.exports = {
         test: /\.js$/,
         loader: 'babel-loader',
         exclude: /node_modules/,
-        query: {
-          presets: ['@babel/preset-env', '@babel/preset-react'],
+        options: {
+          presets: ['@babel/preset-env', '@babel/preset-react']
         },
       },
       {
@@ -101,7 +125,9 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [autoprefixer],
+              postcssOptions: {
+                plugins: () => [autoprefixer],
+              }
             },
           },
         ],

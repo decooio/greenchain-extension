@@ -11,9 +11,9 @@ tasks.copyAssets('build', browser);
 
 console.log('[Webpack Build]');
 console.log('-'.repeat(80));
-let execStr = `SET TEMP_BROWSER=${browser}&& webpack --config webpack/prod.config.js --progress --profile --colors`;
+let execStr = `SET TEMP_BROWSER=${browser}&& webpack --config webpack/prod.config.js --progress --profile --color`;
 if (process.platform === 'darwin' || process.platform === 'linux') {
-  execStr = `export TEMP_BROWSER='${browser}'; webpack --config webpack/prod.config.js --progress --profile --colors`;
+  execStr = `export TEMP_BROWSER='${browser}'; webpack --config webpack/prod.config.js --progress --profile --color`;
 }
 exec(execStr, (err, out, code) => {
   if (err) throw err;

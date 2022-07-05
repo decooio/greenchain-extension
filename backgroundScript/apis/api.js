@@ -46,7 +46,7 @@ const connect = async network => {
       const provider = new WsProvider(networkFullUrl);
       const api = new ApiPromise({
         provider,
-        typesBundle: typesBundleForPolkadot,
+        // typesBundle: typesBundleForPolkadot,
       });
       connection.api = api;
       connection.provider = provider;

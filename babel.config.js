@@ -10,6 +10,7 @@ const plugins = [
 ];
 
 const base = {
+  sourceType: "unambiguous",
   presets: [
     [
       '@babel/preset-env',

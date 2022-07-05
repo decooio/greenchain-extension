@@ -42,7 +42,7 @@ const baseDevConfig = () => ({
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoEmitOnErrorsPlugin(),
-    new webpack.IgnorePlugin(/[^/]+\/[\S]+.prod$/),
+    new webpack.IgnorePlugin({resourceRegExp: /[^/]+\/[\S]+.prod$/}),
     new webpack.DefinePlugin({
       __HOST__: `'${host}'`,
       __PORT__: port,
@@ -55,9 +55,7 @@ const baseDevConfig = () => ({
   resolve: {
     extensions: ['*', '.js'],
   },
-  node: {
-    fs: 'empty',
-  },
+  node: false,
   module: {
     rules: [
       {
