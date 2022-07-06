@@ -28,7 +28,6 @@ const baseDevConfig = () => ({
     stats: {
       colors: true,
     },
-    noInfo: true,
     headers: { 'Access-Control-Allow-Origin': '*' },
   },
   hotMiddleware: {
@@ -51,11 +50,31 @@ const baseDevConfig = () => ({
         BROWSER: JSON.stringify(browser),
       },
     }),
+    // Work around for Buffer is undefined:
+    // https://github.com/webpack/changelog-v5/issues/10
+    new webpack.ProvidePlugin({
+      Buffer: ['buffer', 'Buffer'],
+    }),
   ],
   resolve: {
+    alias: {
+      // https://github.com/facebook/react/issues/20235
+      // https://github.com/facebook/create-react-app/issues/11769
+      "react/jsx-dev-runtime": "react/jsx-dev-runtime.js",
+      "react/jsx-runtime": "react/jsx-runtime.js",
+    },
     extensions: ['*', '.js'],
+    fallback: {
+      "crypto": require.resolve("crypto-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "buffer": require.resolve("buffer")
+    }
   },
-  node: false,
+  node: {
+    global: true,
+    __filename: false,
+    __dirname: false,
+  },
   module: {
     rules: [
       {
@@ -72,7 +91,9 @@ const baseDevConfig = () => ({
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => [autoprefixer],
+              postcssOptions: {
+                plugins: () => [autoprefixer],
+              }
             },
           },
         ],
