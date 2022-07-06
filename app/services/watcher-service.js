@@ -5,7 +5,6 @@ import {
   getTransactions,
   updateTransactions,
   updateTokenList,
-  fetchTransactionHistory,
 } from '../views/dashboard/actions';
 import * as AccountActions from '../actions/account';
 import { getTransfersWithMoment } from '../../lib/services/static-message-factory-service';
@@ -29,7 +28,6 @@ export async function pollPendingTransactions(store) {
 
       if (polledTransfers.length > 0) {
         store.dispatch(getTransactions);
-        store.dispatch(fetchTransactionHistory);
       }
     }
   } catch (e) {

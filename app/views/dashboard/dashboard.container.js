@@ -6,8 +6,7 @@ import {
   connectionError,
   renameAlias,
   onTokenSelected,
-  lockApp,
-  fetchTransactionHistory,
+  lockApp
 } from './actions';
 import { changePage, updateBackupPage } from '../../containers/actions';
 import { createToast } from '../../constants/toast';
@@ -22,7 +21,6 @@ const mapStateToProps = state => ({
   balance: state.accountReducer.balance,
   isLinkToFaucet: state.accountReducer.isLinkToFaucet,
   transactions: state.dashboardReducer.transactions,
-  transactionHistory: state.dashboardReducer.transactionHistory,
   loadMore: state.dashboardReducer.loadMore,
   network: state.networkReducer.network,
   unit: state.networkReducer.unit,
@@ -47,7 +45,6 @@ const mapDispatchToProps = {
   onTokenSelected,
   lockApp,
   addAccount,
-  fetchTransactionHistory,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Dashboard);

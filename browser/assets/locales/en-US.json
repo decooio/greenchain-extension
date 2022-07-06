@@ -27,7 +27,7 @@
     "Sign the following data": "Sign the following data",
     "Update Metadata": "Update Metadata",
     "Create A Password To Secure Your Account": "Create A Password To Secure Your Account",
-    "The password is used to protect your Enigma seed phrase(s) so that other Chrome extensions can't access them.": "The password is used to protect your Enigma seed phrase(s) so that other Chrome extensions can't access them.",
+    "The password is used to protect your seed phrase(s) so that other Chrome extensions can't access them.": "The password is used to protect your seed phrase(s) so that other Chrome extensions can't access them.",
     "Password": "Password",
     "Repeat Password": "Repeat Password",
     "Create": "Create",

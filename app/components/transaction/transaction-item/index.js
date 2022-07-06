@@ -11,31 +11,25 @@ export default class TransactionItem extends Component {
     const {
       transaction, network, colortheme, account, ...otherProps
     } = this.props;
+    console.log('TransactionItem', account, transaction);
+
     return (
       <div>
         {transaction.status !== DAPP ? (
           <a
-            href={`${network.transactionUrl}${transaction.hash}`}
+            href={`${network.transactionUrl}${transaction.txnHash}`}
             target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: 'none' }}
           >
-            {transaction.from === account.address ? (
+            {transaction.metadata.account.address === account.address ? (
               <div {...otherProps}>
                 <CallMadeIcon
                   className="transfer-item-icon"
                   style={{ color: colortheme.text.primary }}
                 />
                 <TransactionItemDetails
-                  amount={`Send ${transaction.amount}${
-                    transaction.module === 'balances'
-                      ? ' GRN'
-                      : transaction.module === 'csm'
-                        ? ' CSM'
-                        : transaction.module === 'candy'
-                          ? ' Candy'
-                          : ''
-                  }`}
+                  amount={`Sent ${transaction.metadata.amount} ${transaction.metadata.unit.text}`}
                   address={transaction.to}
                   moment={transaction.modifiedDate}
                   colortheme={colortheme}
@@ -48,15 +42,7 @@ export default class TransactionItem extends Component {
                   style={{ color: colortheme.text.primary }}
                 />
                 <TransactionItemDetails
-                  amount={`Received ${transaction.amount}${
-                    transaction.module === 'balances'
-                      ? ' GRN'
-                      : transaction.module === 'csm'
-                        ? ' CSM'
-                        : transaction.module === 'candy'
-                          ? ' Candy'
-                          : ''
-                  }`}
+                  amount={`Received ${transaction.metadata.amount} ${transaction.metadata.unit.text}`}
                   address={transaction.from}
                   moment={transaction.modifiedDate}
                   colortheme={colortheme}

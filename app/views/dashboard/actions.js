@@ -1,4 +1,3 @@
-import Axios from 'axios';
 import * as DashboardActionTypes from './action-types';
 import {
   Transaction, Account, Tokens, Network
@@ -15,7 +14,6 @@ import * as AppActions from '../../containers/actions';
 import * as SignInActions from '../sign-in/actions';
 import { clearHashKey } from '../../api/on-boarding';
 import * as NavConstants from '../../constants/navigation';
-import { GREENCHAIN_NETWORK } from '../../../lib/constants/networks';
 
 const updateTokens = tokens => ({
   type: DashboardActionTypes.UPDATE_TOKEN_LIST,
@@ -30,11 +28,6 @@ const updateSelectedToken = token => ({
 export const updateTransactions = transactions => ({
   type: DashboardActionTypes.UPDATE_TRANSACTION_LIST,
   transactions,
-});
-
-const updateTransactionHistory = transactionHistory => ({
-  type: DashboardActionTypes.UPDATE_TRANSACTION_HISTORY,
-  transactionHistory,
 });
 
 const updatePendingTransfers = pendingTransfers => ({
@@ -145,63 +138,4 @@ export const lockApp = () => async dispatch => {
   } catch (err) {
     dispatch(AppActions.updateAppLoading(false));
   }
-};
-
-const fetchTransactionHistoryByPage = async (page, network, address) => {
-  const body = {
-    row: 6,
-    page,
-    address,
-  };
-  const headers = {
-    'Content-Type': 'application/json',
-    'x-api-key': process.env.REACT_APP_SUBSCAN_KEY,
-  };
-
-  const result = await Axios.post(`https://${network}.api.subscan.io/api/scan/transfers`, body, {
-    headers,
-  });
-
-  return result;
-};
-
-export const fetchTransactionHistory = isInit => async (dispatch, getState) => {
-  const {
-    account: { address },
-  } = getState().accountReducer;
-  const { network } = getState().networkReducer;
-  const { transactionHistory, transactionPage } = getState().dashboardReducer;
-
-  const response = isInit ? [] : transactionHistory;
-  const networkUrl = network.value === GREENCHAIN_NETWORK.value
-      ? 'greenchain'
-      : '';
-  if (isInit) {
-    dispatch(updateLoadMore(true));
-  }
-  const result = await fetchTransactionHistoryByPage(
-    isInit ? 0 : transactionPage,
-    networkUrl,
-    address,
-  );
-  if (result.data.data) {
-    if (!result.data.data.transfers) {
-      dispatch(updateLoadMore(false));
-    }
-    // eslint-disable-next-line
-    response.push.apply(response, result.data.data.transfers);
-    dispatch(updateTransactionPage(isInit ? 1 : transactionPage + 1));
-  }
-
-  for (let i = 0; i < response.length; i++) {
-    if (response[i].module === 'balances') {
-      response[i].tokenSymbol = 'GRN';
-    } else if (response[i].module === 'csm') {
-      response[i].tokenSymbol = 'CSM';
-    } else if (response[i].module === 'candy') {
-      response[i].tokenSymbol = 'Candy';
-    }
-  }
-  dispatch(updateTransactionHistory(response));
-  return response;
 };

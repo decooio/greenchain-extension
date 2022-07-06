@@ -27,7 +27,7 @@
   "Sign the following data": "签名下面的数据",
   "Update Metadata": "更新元数据",
   "Create A Password To Secure Your Account": "创建密码来保护您的账户",
-  "The password is used to protect your Enigma seed phrase(s) so that other Chrome extensions can't access them.": "此密码用来保护您的助记词，以防Chrome浏览器扩展获取它们。",
+  "The password is used to protect your seed phrase(s) so that other Chrome extensions can't access them.": "此密码用来保护您的助记词，以防Chrome浏览器扩展获取它们。",
   "Password": "密码",
   "Repeat Password": "确认密码",
   "Create": "创建",

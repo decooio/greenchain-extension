@@ -66,6 +66,7 @@ class TransferFormAmount extends Component {
                 text={t('Max')}
                 style={{
                   marginRight: 8,
+                  wordBreak: 'normal',
                   position: 'relative',
                   cursor: 'pointer',
                   color: colortheme.text.secondary,

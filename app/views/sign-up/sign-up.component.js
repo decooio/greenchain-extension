@@ -140,7 +140,7 @@ class SignUp extends Component {
           title={this.props.t('Create A Password To Secure Your Account')}
           // eslint-disable-next-line
           description={this.props.t(
-            "The password is used to protect your Enigma seed phrase(s) so that other Chrome extensions can't access them.",
+            "The password is used to protect your seed phrase(s) so that other Chrome extensions can't access them.",
           )}
         />
         <GreenChainPassword

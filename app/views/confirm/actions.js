@@ -3,7 +3,7 @@ import { clearTransferDetails } from '../transfer/actions';
 import { DASHBOARD_PAGE } from '../../constants/navigation';
 import { createToast } from '../../constants/toast';
 import { Transaction, Account } from '../../api';
-import { getTransactions, fetchTransactionHistory } from '../dashboard/actions';
+import { getTransactions } from '../dashboard/actions';
 
 export const submitTransaction = (confirmDetails, password) => async dispatch => {
   try {
@@ -12,7 +12,6 @@ export const submitTransaction = (confirmDetails, password) => async dispatch =>
     const { result } = await Transaction.submitTransaction(confirmDetails, password);
 
     dispatch(getTransactions);
-    dispatch(fetchTransactionHistory);
     dispatch(changePage(DASHBOARD_PAGE));
     dispatch(clearTransferDetails());
     dispatch(updateAppLoading(false));

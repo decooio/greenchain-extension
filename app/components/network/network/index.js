@@ -13,17 +13,6 @@ class Network extends Component {
     anchorEl: null,
   };
 
-  handleClick = event => {
-    const { page } = this.props;
-    if (!DISABLE_NETWORKS_PAGES_GROUP.includes(page)) {
-      this.setState({ anchorEl: event.currentTarget });
-    }
-  };
-
-  handleClose = () => {
-    this.setState({ anchorEl: null });
-  };
-
   render() {
     const { anchorEl } = this.state;
     const {
@@ -31,21 +20,13 @@ class Network extends Component {
     } = this.props;
     return (
       <div>
-        <div className="network-text-container" onClick={this.handleClick}>
+        <div className="network-text-container">
           <FontRegular
             className="network-text"
             text={t(network.value === GREENCHAIN_NETWORK.value ? GREENCHAIN_NETWORK.text : network.text)}
             style={{ color: colortheme.text.secondary }}
           />
-          <ChevronDown size={14} color={colortheme.text.secondary} />
         </div>
-        <GreenChainMenu
-          selected={network}
-          options={networks}
-          onChange={onNetworkChange}
-          anchorEl={anchorEl}
-          onClose={this.handleClose}
-        />
       </div>
     );
   }

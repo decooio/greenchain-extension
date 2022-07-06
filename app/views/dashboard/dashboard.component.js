@@ -41,7 +41,6 @@ const MDialogTitle = withStyles({
 class Dashboard extends Component {
   constructor(props) {
     super(props);
-    this.timer = setInterval(() => this.props.fetchTransactionHistory(true), 30000);
     this.textInput = React.createRef();
     this.state = {
       labels: ['Assets', 'Activities'],
@@ -52,18 +51,6 @@ class Dashboard extends Component {
       this.props.changePage(CREATE_ACCOUNT_ENTRY_PAGE);
     }
   }
-
-  componentDidMount() {
-    this.props.fetchTransactionHistory(true);
-  }
-
-  componentWillUnmount() {
-    clearInterval(this.timer);
-  }
-
-  fetchMoreTransaction = () => {
-    this.props.fetchTransactionHistory(false);
-  };
 
   handleSend = () => {
     // if (!this.props.isConnected) {
@@ -141,7 +128,7 @@ class Dashboard extends Component {
       accounts,
       account,
       balances,
-      transactionHistory,
+      transactions,
       balance: { balanceFormatted },
       isLinkToFaucet,
       network,
@@ -317,7 +304,7 @@ class Dashboard extends Component {
                 network={network}
                 account={account}
                 isLinkToFaucet={isLinkToFaucet}
-                transactions={getTransfersWithMoment(transactionHistory)}
+                transactions={transactions}
                 colortheme={colortheme[network.value]}
               />
             )}

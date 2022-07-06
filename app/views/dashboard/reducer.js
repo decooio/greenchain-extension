@@ -25,7 +25,6 @@ const csmDefault = {
 const initialState = {
   accountMenu: ACCOUNT_MENU_OPTIONS,
   transactions: [],
-  transactionHistory: [],
   pendingTransfers: [],
   tokens: [grnDefault, candyDefault, csmDefault],
   token: undefined,
@@ -61,13 +60,6 @@ const reducer = (state = initialState, action) => {
         ...state,
         ...{
           token: action.token,
-        },
-      };
-    case Types.UPDATE_TRANSACTION_HISTORY:
-      return {
-        ...state,
-        ...{
-          transactionHistory: action.transactionHistory,
         },
       };
     case Types.UPDATE_TRANSACTION_PAGE:
