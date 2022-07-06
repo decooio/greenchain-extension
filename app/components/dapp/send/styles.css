@@ -1,0 +1,126 @@
+.send-summary-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+.send-summary-request-type {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+}
+
+.send-summary-send-to-from {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.sign-message-body {
+  color: rgba(77, 77, 77, 1);
+  margin-top: 16px;
+}
+
+.send-balance {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 6px;
+}
+.send-data-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+}
+.send-data {
+  margin-left: 5.5px;
+  font-size: 16px;
+}
+.send-data-label {
+  font-size: 14px;
+  color: rgba(77, 77, 77, 1);
+  margin-right: 5.5px;
+}
+.send-footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: center;
+  width: 100%;
+  padding: 19px 33px 12px 33px;
+}
+
+.send-error {
+  font-size: 14px;
+  color: rgba(255, 0, 0, 1);
+  text-align: center;
+}
+
+.send-txn {
+  margin-top: 14px;
+}
+
+.send-password-wrapper {
+  position: absolute;
+  bottom: 100px;
+}
+
+.send-panel-container {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+  background-color: #eeeeee;
+  max-height: 360px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-bottom: 16px;
+  /* padding: 10px; */
+}
+
+.send_summary_item {
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+}
+.ssi_left {
+  width: 80px;
+  flex-shrink: 0;
+  padding-right: 8px;
+  text-align: end;
+}
+.ssi_right {
+  flex: 1;
+  text-align: left;
+}
+
+.send_tx_from_to {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.send_item {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+  padding: 10px;
+  color: #666666;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.send_item_title {
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}

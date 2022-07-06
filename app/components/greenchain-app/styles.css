@@ -1,0 +1,87 @@
+.display-none {
+  display: none;
+}
+
+.greenchain-logo {
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+}
+
+.greenchain-banner {
+  height: 23px;
+}
+
+.greenchain-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.greenchain-header {
+  display: flex;
+  flex-direction: row;
+  background-color: transparent;
+  padding: 16px 16px 11px 15px;
+  height: 50px;
+  width: 360px;
+  align-items: center;
+}
+
+.greenchain-header-banner {
+  justify-content: space-between;
+}
+
+.greenchain-header-boarded {
+  justify-content: space-between;
+}
+
+.greenchain-network {
+  border: 1px solid #CCCCCC;
+  border-radius: 8px;
+  padding: 2px 4px;
+  width: 160px;
+}
+
+.greenchain-network-status {
+  margin-right: 5px;
+}
+
+.greenchain-config {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.greenchain-settings {
+  margin-left: auto;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: flex-end;
+  font-size: 18px;
+}
+
+.greenchain-user-id {
+  margin-left: auto;
+  align-self: center;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  justify-content: flex-end;
+}
+
+.greenchain-header-text {
+  font-size: 18px;
+  color: #111A34;
+  font-weight: bold;
+  font-family: Roboto-Regular;
+}
+
+.greenchain-header-gray {
+  background: #F7F7FA !important;
+}

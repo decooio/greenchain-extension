@@ -1,0 +1,72 @@
+
+.transfer-from-amount-input {
+  flex: 1;
+  border-radius: 12px;
+}
+
+.transfer-from-amount-input fieldset {
+  border: 0;
+  font-size: 14px;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.05);
+}
+
+.input-margin {
+  margin-top: 12px !important;
+}
+
+.transfer-from-amount-input-meter {
+  margin-top: 50px;
+}
+
+.transfer-from-amount-input-error-msg {
+  display: block;
+  color: #FA5050;
+  height: 20px;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.transfer-from-amount-input-place-holder {
+  height: 20px;
+  display: block;
+}
+
+.transfer-form-amount-dropdown-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.transfer-form-amount-dropdown-label {
+  font-size: 14px;
+  color: #858B9C;
+  width: 80px;
+}
+
+.transfer-form-amount-dropdown {
+  flex: 1;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.05);
+}
+
+.transfer-form-amount-input-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.transfer-form-amount-input-label {
+  font-size: 14px;
+  color: #858B9C;
+  width: 80px;
+}
+
+.transfer-form-amount-balance {
+  font-size: 14px;
+  color: #858B9C;
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
