@@ -202,11 +202,11 @@ extension.runtime.onMessage.addListener((request, sender, sendResponse) => {
             ResponseService.allowMetadataProvide(request, sender, sendResponse);
             break;
           // tokens
-          case MessageTypes.BG_CRUST_GET_TOKEN_LIST: {
-            ResponseService.getCrustTokenList(request, sender, sendResponse);
+          case MessageTypes.BG_GREENCHAIN_GET_TOKEN_LIST: {
+            ResponseService.getGreenChainTokenList(request, sender, sendResponse);
             break;
           }
-          case MessageTypes.BG_CRUST_UPDATE_CANDY_BALANCE: {
+          case MessageTypes.BG_GREENCHAIN_UPDATE_CANDY_BALANCE: {
             ResponseService.updateCandyBalance(request, sender, sendResponse);
             break;
           }

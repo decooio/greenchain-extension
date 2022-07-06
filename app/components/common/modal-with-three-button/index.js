@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import withStyles from '@material-ui/core/styles/withStyles';
 import ButtonCustom from '../buttons/button-custom';
 import { styles } from './styles';
-import { CRUST_MAXWELL_NETWORK, CRUST_NETWORK } from '../../../../lib/constants/networks';
+import { GREENCHAIN_NETWORK } from '../../../../lib/constants/networks';
 
 function ModalWithThreeButton(props) {
   const {
@@ -29,9 +29,7 @@ function ModalWithThreeButton(props) {
       fullWidth
       classes={{
         paper:
-          network.value === CRUST_MAXWELL_NETWORK.value
-            ? classes.paperRootMaxwell
-            : network.value === CRUST_NETWORK.value
+          network.value === GREENCHAIN_NETWORK.value
               ? classes.paperRootMainnet
               : null,
       }}
@@ -65,9 +63,7 @@ function ModalWithThreeButton(props) {
       <DialogActions
         classes={{
           root:
-            network.value === CRUST_MAXWELL_NETWORK.value
-              ? classes.rootMaxwell
-              : network.value === CRUST_NETWORK.value
+            network.value === GREENCHAIN_NETWORK.value
                 ? classes.rootMainnet
                 : null,
         }}

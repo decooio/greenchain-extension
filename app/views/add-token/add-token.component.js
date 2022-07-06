@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Clear from '@material-ui/icons/Clear';
 import SubHeader from '../../components/common/sub-header';
 import FooterButton from '../../components/common/footer-button-old';
-import CrustInput from '../../components/common/crust-input';
+import GreenChainInput from '../../components/common/greenchain-input';
 import { DASHBOARD_PAGE } from '../../constants/navigation';
 import { colortheme } from '../../../lib/constants/colors';
 import './styles.css';
@@ -79,7 +79,7 @@ export default class AddToken extends Component {
           colortheme={colortheme[network.value]}
         />
         <div className="token-add-container">
-          <CrustInput
+          <GreenChainInput
             className="token-address-input"
             value={tname}
             onChange={this.handleInputChange(propName)}

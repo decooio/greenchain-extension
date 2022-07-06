@@ -29,7 +29,7 @@ export default class TransactionItem extends Component {
                 <TransactionItemDetails
                   amount={`Send ${transaction.amount}${
                     transaction.module === 'balances'
-                      ? ' CRU'
+                      ? ' GRN'
                       : transaction.module === 'csm'
                         ? ' CSM'
                         : transaction.module === 'candy'
@@ -50,7 +50,7 @@ export default class TransactionItem extends Component {
                 <TransactionItemDetails
                   amount={`Received ${transaction.amount}${
                     transaction.module === 'balances'
-                      ? ' CRU'
+                      ? ' GRN'
                       : transaction.module === 'csm'
                         ? ' CSM'
                         : transaction.module === 'candy'

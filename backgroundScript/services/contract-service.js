@@ -1,6 +1,6 @@
 import { BAD_REQUEST } from '../../lib/constants/api';
 import { getCurrentAccount } from './store/account-store';
-import { getContractTokens } from './store/crust-tokens-store';
+import { getContractTokens } from './store/greenchain-tokens-store';
 import { getCurrentNetwork } from './network-service';
 import { Abi, ContractPromise as Contract } from '@polkadot/api-contract';
 import { getApi } from '../apis/chain';

@@ -14,7 +14,7 @@ export default class TermsText extends Component {
         </p>
         <ol className="c7 lst-kix_ibdn0zobuwho-0 start" start="1">
           <li className="c1 c3">
-            <span>API Consulting dba Crust Network </span>
+            <span>API Consulting dba GreenChain Network </span>
             <span>
               provides GreenChain Wallet as a platform for managing Polkadot Network accounts, and
               allowing ordinary websites to interact with the Polkadot Network, while keeping the
@@ -27,7 +27,7 @@ export default class TermsText extends Component {
               &mdash; which includes text, images, audio, code and other materials (collectively,
               the &ldquo;Content&rdquo;) and all of the features, and services provided. This Site,
               and any other features, tools, materials, or other services offered from time to time
-              by Crust Network &nbsp;are referred to here as the &ldquo;Service.&rdquo;
+              by GreenChain Network &nbsp;are referred to here as the &ldquo;Service.&rdquo;
               {' '}
               <br />
             </span>
@@ -46,7 +46,7 @@ export default class TermsText extends Component {
               Terms where that option is made available, you (1) accept and agree to these Terms (2)
               consent to the collection, use, disclosure and other handling of information as
               described in our Privacy Policy&nbsp; &nbsp;and (3) any additional terms, rules and
-              conditions of participation issued by Crust Network &nbsp;from time to time. If you do
+              conditions of participation issued by GreenChain Network &nbsp;from time to time. If you do
               not agree to the Terms, then you may not access or use the Content or Services.
             </span>
           </li>
@@ -64,7 +64,7 @@ export default class TermsText extends Component {
           <li className="c1 c3">
             <span className="c0">
               Except for Section XIII (Providing for binding arbitration and Waiver of Class Action
-              Rights), Crust Network &nbsp;reserves the right, at its sole discretion, to modify or
+              Rights), GreenChain Network &nbsp;reserves the right, at its sole discretion, to modify or
               replace the Terms of Use at any time. The most current version of these Terms will be
               posted on our Site.
               {' '}
@@ -106,7 +106,7 @@ export default class TermsText extends Component {
               legally permitted to use the service in your jurisdiction including owning
               cryptographic tokens of value, and interacting with the Services or Content in any
               way. You further represent you are responsible for ensuring compliance with the laws
-              of your jurisdiction and acknowledge that Crust Network and the Polkadot Network are not
+              of your jurisdiction and acknowledge that GreenChain Network and the Polkadot Network are not
               liable for your compliance with such laws.
             </span>
           </li>
@@ -168,7 +168,7 @@ export default class TermsText extends Component {
               IS&rdquo; and &ldquo;as available&rdquo; basis, without warranties of any kind, either
               express or implied, including, without limitation, implied warranties of
               merchantability, fitness for a particular purpose or non-infringement. You acknowledge
-              that Crust Network has no control over, and no duty to take any action regarding: which
+              that GreenChain Network has no control over, and no duty to take any action regarding: which
               users gain access to or use the Service; what effects the Content may have on you; how
               you may interpret or use the Content; or what actions you may take as a result of
               having been exposed to the Content.
@@ -178,9 +178,9 @@ export default class TermsText extends Component {
           </li>
           <li className="c1 c9">
             <span className="c0">
-              You release Crust Network &nbsp;from all liability for you having acquired or not
-              acquired Content through the Service. Crust Network makes no representations concerning
-              any Content contained in or accessed through the Service, and Crust Network will not be
+              You release GreenChain Network &nbsp;from all liability for you having acquired or not
+              acquired Content through the Service. GreenChain Network makes no representations concerning
+              any Content contained in or accessed through the Service, and GreenChain Network will not be
               responsible or liable for the accuracy, copyright compliance, legality or decency of
               material contained in or accessed through the Service.
             </span>
@@ -227,7 +227,7 @@ export default class TermsText extends Component {
           <span className="c0">
             GreenChain Wallet &nbsp;and the Polkadot Network could be impacted by one or more
             regulatory inquiries or regulatory action, which could impede or limit the ability of
-            Crust Network to continue to develop, or which could impede or limit your ability to
+            GreenChain Network to continue to develop, or which could impede or limit your ability to
             access or use the Service or the Polkadot Network blockchain.
           </span>
         </p>
@@ -272,7 +272,7 @@ export default class TermsText extends Component {
           </span>
           <span>Polkadot Network</span>
           <span className="c0">
-            . You acknowledge these risks and represent that Crust Network nor the Polkadot Network
+            . You acknowledge these risks and represent that GreenChain Network nor the Polkadot Network
             cannot be held liable for such fluctuations or increased costs.
           </span>
         </p>
@@ -292,10 +292,10 @@ export default class TermsText extends Component {
             Services or Content and the trustworthiness of any third-party websites, products,
             smart-contracts, or Content you access or use through the Service. You further expressly
             acknowledge and represent that Polkadot Network applications can be written maliciously
-            or negligently, that Crust Network and Polkadot Network cannot be held liable for your
+            or negligently, that GreenChain Network and Polkadot Network cannot be held liable for your
             interaction with such applications and that such applications may cause the loss of
             property or even identity. This warning and others later provided by GreenChain Wallet,
-            Crust Network, and the Polkadot Network &nbsp;in no way evidence or represent an on-going
+            GreenChain Network, and the Polkadot Network &nbsp;in no way evidence or represent an on-going
             duty to alert you to all of the potential risks of utilizing the Service or Content.
           </span>
         </p>
@@ -310,7 +310,7 @@ export default class TermsText extends Component {
         </p>
         <p className="c1">
           <span className="c0">
-            You agree to release and to indemnify, defend and hold harmless Crust Network, the
+            You agree to release and to indemnify, defend and hold harmless GreenChain Network, the
             Polkadot Network &nbsp;and its parents, subsidiaries, affiliates and agencies, as well
             as the officers, directors, employees, shareholders and representatives of any of the
             foregoing entities, from and against any and all losses, liabilities, expenses, damages,
@@ -403,7 +403,7 @@ export default class TermsText extends Component {
         <p className="c1 c5">
           <span className="c0">
             All content included on the Site such as text, graphics, logos, buttons, images, and
-            software is the property of Crust Network and Polkadot Network (where applicable).
+            software is the property of GreenChain Network and Polkadot Network (where applicable).
             {' '}
           </span>
         </p>
@@ -417,12 +417,12 @@ export default class TermsText extends Component {
         </ol>
         <p className="c1 c5">
           <span className="c0">
-            GreenChain Wallet and Crust Network trademarks may not be used in connection with any
-            product or service that is unrelated to Crust Network in any manner that is likely to
-            cause confusion among customers, or which disparages or discredits Crust Network. All
-            other trademarks are not owed by Crust Network or its subsidiaries that appear on this
+            GreenChain Wallet and GreenChain Network trademarks may not be used in connection with any
+            product or service that is unrelated to GreenChain Network in any manner that is likely to
+            cause confusion among customers, or which disparages or discredits GreenChain Network. All
+            other trademarks are not owed by GreenChain Network or its subsidiaries that appear on this
             Site are the property of their respective owners, who may or may not be affiliated with,
-            connected to, or sponsored by Crust Network or its subsidiaries.
+            connected to, or sponsored by GreenChain Network or its subsidiaries.
             <br />
           </span>
         </p>
@@ -434,9 +434,9 @@ export default class TermsText extends Component {
         <p className="c1 c5">
           <span>
             All title, ownership and intellectual property rights in and to the Service are owned by
-            Crust Network &nbsp;or its licensors. You acknowledge and agree that the Service contains
+            GreenChain Network &nbsp;or its licensors. You acknowledge and agree that the Service contains
             proprietary and confidential information that is protected by applicable intellectual
-            property and other laws. Except as expressly authorized by Crust Network, you agree not to
+            property and other laws. Except as expressly authorized by GreenChain Network, you agree not to
             copy, modify, rent, lease, loan, sell, distribute, perform, display or create derivative
             works based on the Service, in whole or in part.
           </span>
@@ -471,7 +471,7 @@ export default class TermsText extends Component {
           <span className="c6">X. Termination and suspension</span>
         </p>
         <p className="c1">
-          <span>Crust Network</span>
+          <span>GreenChain Network</span>
           <span className="c0">
             &nbsp; may terminate or suspend all or part of the Service and your GreenChain Wallet
             access immediately, without prior notice or liability, if you breach any of the terms or
@@ -640,7 +640,7 @@ export default class TermsText extends Component {
             Both Parties further agree that any arbitration shall be conducted in their individual
             capacities only and not as a class action or other representative action, and the
             Parties expressly waive their right to file a class action or seek relief on a class
-            basis. YOU AND Crust Network &nbsp;AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY
+            basis. YOU AND GreenChain Network &nbsp;AGREE THAT EACH MAY BRING CLAIMS AGAINST THE OTHER ONLY
             IN YOUR OR ITS INDIVIDUAL CAPACITY, AND NOT AS A PLAINTIFF OR CLASS MEMBER IN ANY
             PURPORTED CLASS OR REPRESENTATIVE PROCEEDING. If any court or arbitrator determines that
             the class action waiver set forth in this paragraph is void or unenforceable for any
@@ -680,7 +680,7 @@ export default class TermsText extends Component {
           <span className="c0" />
         </p>
         <p className="c1">
-          <span>Crust Network will provide </span>
+          <span>GreenChain Network will provide </span>
           <span>6</span>
           <span className="c0">
             0-days&rsquo; notice of any changes to this section. Changes will become effective on
@@ -693,7 +693,7 @@ export default class TermsText extends Component {
         </p>
         <p className="c1">
           <span className="c0">
-            For any dispute not subject to arbitration you and Crust Network agree to submit to the
+            For any dispute not subject to arbitration you and GreenChain Network agree to submit to the
             personal and exclusive jurisdiction of Toronto, Ontario, Canada. You further agree to
             accept service of process by mail, and hereby waive any and all jurisdictional and venue
             defenses otherwise available.
@@ -704,7 +704,7 @@ export default class TermsText extends Component {
         </p>
         <p className="c1">
           <span className="c0">
-            The Terms and the relationship between you and Crust Network shall be governed by the laws
+            The Terms and the relationship between you and GreenChain Network shall be governed by the laws
             of the Toronto in the province of Ontario without regard to conflict of law provisions.
           </span>
         </p>

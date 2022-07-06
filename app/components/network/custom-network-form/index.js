@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CrustInput from '../../common/crust-input';
+import GreenChainInput from '../../common/greenchain-input';
 import FooterButton from '../../common/footer-button-old';
 import './styles.css';
 
@@ -18,7 +18,7 @@ export default class CustomNetworkForm extends Component {
     } = this.props;
     return (
       <div {...otherProps}>
-        <CrustInput
+        <GreenChainInput
           value={url}
           onChange={onChange}
           label="Custom URL"

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
 import TransactionItem from '../transaction-item';
-import { CRUST_MAXWELL_NETWORK } from '../../../../lib/constants/networks';
 import './styles.css';
 
 export default class TransactionItems extends Component {
@@ -32,7 +31,7 @@ export default class TransactionItems extends Component {
                 colortheme={colortheme}
                 style={{
                   background: colortheme.card,
-                  boxShadow: network.value === CRUST_MAXWELL_NETWORK.value ? 'none' : '',
+                  boxShadow: '',
                 }}
               />
             </div>

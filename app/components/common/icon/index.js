@@ -140,7 +140,7 @@ const SolidWallet = props => (
       }}
       alt=""
     />
-    <FontRegular text="crust wallet" style={{ color: props.colortheme.text.primary }} />
+    <FontRegular text="greenchain wallet" style={{ color: props.colortheme.text.primary }} />
   </div>
 );
 

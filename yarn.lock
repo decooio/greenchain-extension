@@ -1228,13 +1228,6 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@crustio/type-definitions@0.0.9":
-  version "0.0.9"
-  resolved "https://registry.npmjs.org/@crustio/type-definitions/-/type-definitions-0.0.9.tgz"
-  integrity sha512-+FSxNTi3+VUR+FeElvpJrm8w6tRWJ3GLS+5qCCP5G75pqGXcozx2fh4RfUirCS4Wx8alWMWSVLEDRNYbU7k4EQ==
-  dependencies:
-    "@open-web3/orml-type-definitions" "^0.8.2-9"
-
 "@discoveryjs/json-ext@^0.5.0":
   version "0.5.7"
   resolved "https://registry.yarnpkg.com/@discoveryjs/json-ext/-/json-ext-0.5.7.tgz#1d572bfbbe14b7704e0ba0f39b74815b84870d70"
@@ -1608,11 +1601,6 @@
   dependencies:
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
-
-"@open-web3/orml-type-definitions@^0.8.2-9":
-  version "0.8.2-11"
-  resolved "https://registry.npmjs.org/@open-web3/orml-type-definitions/-/orml-type-definitions-0.8.2-11.tgz"
-  integrity sha512-cUv5+mprnaGNt0tu3FhK1nFRBK7SGjPhA1O0nxWWeRmuuH5fjkr0glbHE9kcKuCBfsh7nt6NGwxwl9emQtUDSA==
 
 "@polka/url@^1.0.0-next.20":
   version "1.0.0-next.21"

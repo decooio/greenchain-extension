@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import FontMedium from '../fonts/font-medium';
 import IconContainer from '../icon-container';
-import CrustMenu from '../crust-menu';
+import GreenChainMenu from '../greenchain-menu';
 import './styles.css';
 
 export default class SubHeader extends Component {
@@ -44,7 +44,7 @@ export default class SubHeader extends Component {
         {subMenu && subMenu.length > 0 && (
           <div>
             {/* <MoreVertIcon onClick={this.handleClick} color="#858B9C" className="more-list-icon" /> */}
-            <CrustMenu
+            <GreenChainMenu
               options={subMenu}
               onChange={option => {
                 onSubMenuOptionsChange(option);

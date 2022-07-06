@@ -87,12 +87,7 @@ export const Lock = {
   value: 'lock',
 };
 
-export const GET_CRU = {
-  text: 'Get CRU',
-  value: 'get_cru',
-};
-
-export const OPTIONS = [ADDRESS_BOOK, LANGUAGE_SETTING, NetworkMode, Lock, GET_CRU, ABOUT];
+export const OPTIONS = [ADDRESS_BOOK, LANGUAGE_SETTING, NetworkMode, Lock, ABOUT];
 
 export const ACCOUNT_MENU_OPTIONS = [RENAME];
 

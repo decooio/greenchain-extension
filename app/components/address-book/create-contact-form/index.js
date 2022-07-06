@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import TransferTo from '../../transfer/transfer-to';
-import CrustInput from '../../common/crust-input';
+import GreenChainInput from '../../common/greenchain-input';
 import FooterButton from '../../common/footer-button';
 import './styles.css';
 
@@ -49,7 +49,7 @@ class CreateContactForm extends Component {
             colortheme={colortheme}
           />
           <div className="contact-fname-input-container">
-            <CrustInput
+            <GreenChainInput
               className="contact-fname-input"
               value={fname}
               onChange={handleFnameChange(fnamePropName)}
@@ -64,7 +64,7 @@ class CreateContactForm extends Component {
             )}
           </div>
           <div className="contact-lname-input-container">
-            <CrustInput
+            <GreenChainInput
               className="contact-lname-input"
               value={lname}
               onChange={handleLnameChange(lnamePropName)}

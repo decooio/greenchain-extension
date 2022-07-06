@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import ModalWithThreeButton from '../../components/common/modal-with-three-button';
 import ContentHeader from '../../components/common/content-header';
-import LogoBig from '../../images/crust-logo-big.svg';
+import LogoBig from '../../images/greenchain-logo-big.svg';
 import {
   CREATE_ACCOUNT_PAGE,
   IMPORT_JSON_PAGE,
@@ -16,7 +16,7 @@ import {
   IMPORT_FROM_JSON_BUTTON_TEXT,
   IMPORT_FROM_PHRASE_BUTTON_TEXT,
 } from '../../constants/account';
-import { CRUST_NETWORK } from '../../../lib/constants/networks';
+import { GREENCHAIN_NETWORK } from '../../../lib/constants/networks';
 import './styles.css';
 import { colortheme } from '../../../lib/constants/colors';
 
@@ -76,25 +76,25 @@ class CreateAccountEntry extends Component {
           <div className="entry-container-entries">
             <ModalWithThreeButton
               show={!showImport && !isLoading}
-              colortheme={colortheme[CRUST_NETWORK.value]}
+              colortheme={colortheme[GREENCHAIN_NETWORK.value]}
               handleCancel={this.handleCancel}
               handleTopClick={() => this.handleClick(GENERATE_BUTTON_TEXT)}
               handleBottomClick={() => this.handleClick(IMPORT_BUTTON_TEXT)}
               topButton={GENERATE_BUTTON_TEXT}
               bottomButton={IMPORT_BUTTON_TEXT}
-              network={CRUST_NETWORK}
+              network={GREENCHAIN_NETWORK}
               oneAction={false}
             />
             <ModalWithThreeButton
               show={showImport && !isLoading}
-              colortheme={colortheme[CRUST_NETWORK.value]}
+              colortheme={colortheme[GREENCHAIN_NETWORK.value]}
               handleCancel={() => this.handleClick(BACK_BUTTON_TEXT)}
               handleTopClick={() => this.handleClick(IMPORT_FROM_JSON_BUTTON_TEXT)}
               handleBottomClick={() => this.handleClick(IMPORT_FROM_PHRASE_BUTTON_TEXT)}
               topButton={IMPORT_FROM_JSON_BUTTON_TEXT}
               bottomButton={IMPORT_FROM_PHRASE_BUTTON_TEXT}
               cancelButton="Go back"
-              network={CRUST_NETWORK}
+              network={GREENCHAIN_NETWORK}
               oneAction={false}
               sameStyleButton
             />

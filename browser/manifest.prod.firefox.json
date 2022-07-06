@@ -2,7 +2,7 @@
   "version": "1.0.0",
   "applications": {
     "gecko": {
-      "id": "info@crust.network",
+      "id": "info@greenchain.cc",
       "strict_min_version": "48.0"
     }
   },

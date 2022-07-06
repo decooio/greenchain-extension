@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import List from '@material-ui/core/List';
 import { withTranslation } from 'react-i18next';
-import CrustExpansionPanel from '../../common/crust-expansion-panel';
+import GreenChainExpansionPanel from '../../common/greenchain-expansion-panel';
 import FontRegular from '../../common/fonts/font-regular';
 import KeyPairItemCard from '../../common/key-pair-item-card';
 
@@ -19,7 +19,7 @@ class CreateAccountAdvancedConfig extends Component {
     } = this.props;
     return (
       <div {...otherProps}>
-        <CrustExpansionPanel
+        <GreenChainExpansionPanel
           disabled={disableAccountSettings}
           title={t('Advanced')}
           colortheme={colortheme}
@@ -47,13 +47,13 @@ class CreateAccountAdvancedConfig extends Component {
               />
             ))}
           </List>
-          {/* <CrustRadioButtonGroup
+          {/* <GreenChainRadioButtonGroup
             options={keypairTypes}
             value={keypairType}
             onChange={onKeypairTypeChange}
             disabled={disableAccountSettings}
           /> */}
-        </CrustExpansionPanel>
+        </GreenChainExpansionPanel>
       </div>
     );
   }

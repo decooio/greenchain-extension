@@ -25,7 +25,7 @@ import {
   REMOVE,
   OPTIONS as AccountOptions,
 } from '../../constants/options';
-import CrustTabs from '../../components/common/crust-tabs';
+import GreenChainTabs from '../../components/common/greenchain-tabs';
 import FooterWithTwoButton from '../../components/common/footer-with-two-button';
 import { ENGLISH } from '../../constants/language';
 import { colortheme } from '../../../lib/constants/colors';
@@ -176,8 +176,6 @@ class ManageAccount extends Component {
       }, 1000);
     } else if (option.value === 'lock') {
       this.props.lockApp();
-    } else if (option.value === 'get_cru') {
-      window.open('https://swap.crustapps.net/');
     } else {
       this.props.updateBackupPage(this.props.page);
       this.props.changePage(option.value);
@@ -230,7 +228,7 @@ class ManageAccount extends Component {
           colortheme={colortheme[network.value]}
         />
         <>
-          <CrustTabs
+          <GreenChainTabs
             value={currentTab}
             onChange={this.handleTabChange}
             labels={tLabels}

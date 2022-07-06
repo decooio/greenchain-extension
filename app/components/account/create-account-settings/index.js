@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import CrustInput from '../../common/crust-input';
+import GreenChainInput from '../../common/greenchain-input';
 import CreateAccountAdvancedConfig from '../create-account-advanced-config';
-import CrustPassword from '../../common/password/crust-password';
+import GreenChainPassword from '../../common/password/greenchain-password';
 import './styles.css';
 
 export default class CreateAccountSettings extends Component {
@@ -32,7 +32,7 @@ export default class CreateAccountSettings extends Component {
     this.aliasRef = aliasRef;
     return (
       <div {...otherProps}>
-        <CrustInput
+        <GreenChainInput
           className="account-alias-input"
           onChange={handleAliasChange(aliasPropName)}
           placeholder={aliasLabel}
@@ -46,7 +46,7 @@ export default class CreateAccountSettings extends Component {
           <span className="place-holder"> </span>
         )}
 
-        <CrustPassword
+        <GreenChainPassword
           className="account-password-input"
           onChange={handlePasswordChange}
           password={password}

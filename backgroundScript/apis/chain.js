@@ -7,7 +7,7 @@ const femtoUnit = findSi('f');
 const units = SI.filter(x => x.power >= femtoUnit.power);
 const DEFAULT_SS58 = 42;
 const DEFAULT_DECIMALS = 12;
-const DEFAULT_SYMBOL = 'CRU';
+const DEFAULT_SYMBOL = 'GRN';
 
 let keyringInited = false;
 

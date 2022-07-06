@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import FooterButton from '../../common/footer-button';
 import ConfirmParticular from '../confirm-particular';
-import CrustPassword from '../../common/password/crust-password';
+import GreenChainPassword from '../../common/password/greenchain-password';
 import { shortenAddress } from '../../../services/wallet-service';
 import FooterWithTwoButton from '../../common/footer-with-two-button';
 import './styles.css';
@@ -57,7 +57,7 @@ class ConfirmForm extends Component {
             colortheme={colortheme}
           />
           <div className="confirm-form-password-container">
-            <CrustPassword
+            <GreenChainPassword
               className="confirm-form-password"
               onChange={e => handleOnChange('password', e)}
               password={password}

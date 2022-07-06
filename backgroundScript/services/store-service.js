@@ -5,7 +5,7 @@ import * as transactionActions from '../actions/transactions';
 import * as networkStateActions from '../actions/networks';
 import * as permissionStateActions from '../actions/permissions';
 import { updateAddressBookList } from '../actions/address-book';
-import { updateTokenList } from '../actions/crust-tokens';
+import { updateTokenList } from '../actions/greenchain-tokens';
 import { dispatchUpdateMetadata } from '../actions/dapp-data';
 import * as Chain from '../../lib/constants/chain';
 import * as StorageServices from '../../lib/services/extension/storage';
@@ -63,4 +63,4 @@ export const findChain = genesisHash => getChainMetadataList().find(item => item
 
 export const findChainByName = name => getChainMetadataList().find(item => item.value === name);
 
-export const updateCrustTokens = tokens => getStore().dispatch(updateTokenList(tokens));
+export const updateGreenChainTokens = tokens => getStore().dispatch(updateTokenList(tokens));

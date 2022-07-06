@@ -1,6 +1,6 @@
 import { runtime } from 'extensionizer';
 import {
-  SENDER_CRUST_BG,
+  SENDER_GREENCHAIN_BG,
   SYNC_NETWORK_CONNECTED,
   SYNC_NETWORK_ERROR,
   SYNC_NETWORK_LOADING,
@@ -17,7 +17,7 @@ export default function watchBg(store, utils) {
   runtime.onMessage.addListener((msg, sender, sendResponse) => {
     // eslint-disable-next-line no-console
     console.info('msg:', msg, sender, sendResponse);
-    if (msg && msg.sender === SENDER_CRUST_BG) {
+    if (msg && msg.sender === SENDER_GREENCHAIN_BG) {
       switch (msg.type) {
         case SYNC_NETWORK_CONNECTED:
           dispatch(updateNetworkStatus(msg.isConnected));

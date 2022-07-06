@@ -4,8 +4,6 @@ import { setChain } from './chain';
 import { syncNetworkConnected, syncNetworkError, syncNetworkLoading } from '../messaging/sender';
 import { getOfflineMode } from '../../lib/services/extension/local';
 
-const { typesBundleForPolkadot } = require('@crustio/type-definitions');
-
 const connection = {
   isConnected: false,
   api: null,
@@ -45,8 +43,7 @@ const connect = async network => {
       }
       const provider = new WsProvider(networkFullUrl);
       const api = new ApiPromise({
-        provider,
-        // typesBundle: typesBundleForPolkadot,
+        provider
       });
       connection.api = api;
       connection.provider = provider;

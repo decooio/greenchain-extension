@@ -6,7 +6,7 @@
 }
 
 .account-container {
-  background-image: url("../../../app/images/crust-home-bg.svg");
+  background-image: url("../../../app/images/greenchain-home-bg.svg");
   background-repeat: no-repeat;
 }
 
@@ -96,7 +96,7 @@
   background: #FF8D00;
 }
 
-.crust-offline-container {
+.greenchain-offline-container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import ContentHeader from '../../common/content-header';
-import CrustMultilineInput from '../../common/crust-multiline-input';
+import GreenChainMultilineInput from '../../common/greenchain-multiline-input';
 import './styles.css';
 
 class ImportSeedPhrase extends Component {
@@ -35,7 +35,7 @@ class ImportSeedPhrase extends Component {
           )}
           colortheme={colortheme}
         />
-        <CrustMultilineInput
+        <GreenChainMultilineInput
           className="import-seed-phrase-input"
           placeholder={t('Type or paste your seed phrase...')}
           error={isError}

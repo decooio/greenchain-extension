@@ -22,7 +22,7 @@ export const transferAndWatch = async (transaction, password) => {
       }
 
       // eslint-disable-next-line
-      console.log(`trans cru: status :: ${JSON.stringify(result)}`);
+      console.log(`trans grn: status :: ${JSON.stringify(result)}`);
 
       const { status } = result;
       if (status.isFinalized || status.isInBlock) {

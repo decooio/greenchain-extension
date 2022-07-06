@@ -126,7 +126,7 @@ class TokenDetailsPage extends Component {
             amount={convertBalanceToShow(token.balance, token.decimals)}
             handleSend={this.handleSend}
             handleDeposit={this.handleDeposit}
-            labelText={token.tokenSymbol === 'CRU' ? 'Transferable' : ''}
+            labelText={token.tokenSymbol === 'GRN' ? 'Transferable' : ''}
           />
         </div>
 

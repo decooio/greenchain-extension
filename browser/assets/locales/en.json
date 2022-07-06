@@ -160,13 +160,11 @@
   "reasons_2": "2. The wallet has not been updated to the latest version. You may need to update the wallet or wait for a new version release. ",
   "reasons_3": "3. Something wrong with the network connection or the server.",
 
-  "Crust Mainnet": "Crust Mainnet",
-  "Crust Maxwell": "Crust Maxwell",
+  "GreenChain Mainnet": "GreenChain Mainnet",
 
   "My Account": "My Account",
   "Settings": "Settings",
   "Lock": "Lock",
-  "Get CRU": "Get CRU",
 
   "To Address": "To Address",
   "Max": "Max"

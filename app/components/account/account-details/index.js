@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import ReactTooltip from 'react-tooltip';
 import FontRegular from '../../common/fonts/font-regular';
 import ClickToCopyAddress from '../../common/click-to-copy-address';
-import CrustInput from '../../common/crust-input';
+import GreenChainInput from '../../common/greenchain-input';
 import './styles.css';
 
 export default class AccountDetails extends Component {
@@ -35,7 +35,7 @@ export default class AccountDetails extends Component {
           </div>
         )}
         {editMode && (
-          <CrustInput
+          <GreenChainInput
             className="account-input"
             onChange={onAliasChange}
             onBlur={onAliasInputBlur}

@@ -3,8 +3,8 @@ import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 import ErrorOutlineOutlinedIcon from '@material-ui/icons/ErrorOutlineOutlined';
-import CrustValidator from '../../utils/crust-validator';
-import validator from '../../utils/crust-validator/validator';
+import GreenChainValidator from '../../utils/greenchain-validator';
+import validator from '../../utils/greenchain-validator/validator';
 import CreateAccountForm from '../../components/account/create-account-form';
 import CreateAccountSettings from '../../components/account/create-account-settings';
 import FooterButton from '../../components/common/footer-button';
@@ -39,8 +39,8 @@ class ImportPhrase extends Component {
       password: '',
       isOpen: false,
     };
-    this.validator = new CrustValidator(validator.importSeedPhraseValidation);
-    this.aliasValidator = new CrustValidator(validator.aliasValidation);
+    this.validator = new GreenChainValidator(validator.importSeedPhraseValidation);
+    this.aliasValidator = new GreenChainValidator(validator.aliasValidation);
     this.aliasInput = React.createRef();
     this.seedInput = React.createRef();
     this.confirmSeedInput = React.createRef();

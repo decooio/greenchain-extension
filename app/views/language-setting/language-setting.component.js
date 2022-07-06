@@ -69,7 +69,7 @@ class LanguageSetting extends Component {
               />
             ))}
           </List>
-          {/* <CrustRadioButtonGroup
+          {/* <GreenChainRadioButtonGroup
             // eslint-disable-next-line
             vertical={true}
             options={options}

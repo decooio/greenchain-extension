@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import { ChevronDown } from 'react-feather';
-import CrustMenu from '../../common/crust-menu';
+import GreenChainMenu from '../../common/greenchain-menu';
 import FontRegular from '../../common/fonts/font-regular';
 import { DISABLE_NETWORKS_PAGES_GROUP } from '../../../constants/navigation';
 // import { shortenName } from '../../../services/wallet-service';
 import './styles.css';
-import { CRUST_NETWORK } from '../../../../lib/constants/networks';
+import { GREENCHAIN_NETWORK } from '../../../../lib/constants/networks';
 
 class Network extends Component {
   state = {
@@ -34,12 +34,12 @@ class Network extends Component {
         <div className="network-text-container" onClick={this.handleClick}>
           <FontRegular
             className="network-text"
-            text={t(network.value === CRUST_NETWORK.value ? CRUST_NETWORK.text : network.text)}
+            text={t(network.value === GREENCHAIN_NETWORK.value ? GREENCHAIN_NETWORK.text : network.text)}
             style={{ color: colortheme.text.secondary }}
           />
           <ChevronDown size={14} color={colortheme.text.secondary} />
         </div>
-        <CrustMenu
+        <GreenChainMenu
           selected={network}
           options={networks}
           onChange={onNetworkChange}

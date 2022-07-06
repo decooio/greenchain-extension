@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import { saveAs } from 'file-saver';
 import InfoOutlinedIcon from '@material-ui/icons/InfoOutlined';
-import CrustPassword from '../../components/common/password/crust-password';
+import GreenChainPassword from '../../components/common/password/greenchain-password';
 import AccountInfo from '../../components/account/account-info';
 import * as Account from '../../api/account';
 import './styles.css';
@@ -91,7 +91,7 @@ class ExportAccout extends Component {
               )}
             />
           </div>
-          <CrustPassword
+          <GreenChainPassword
             className="export-account-password"
             onChange={this.handleOnChange}
             password={password}

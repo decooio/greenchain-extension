@@ -7,7 +7,7 @@ import transactionState from './transactions';
 import dAppDataState from './dapp-data';
 import permissionState from './permissions';
 import addressBookState from './address-book';
-import crustTokensState from './crust-tokens';
+import greenchainTokensState from './greenchain-tokens';
 
 export default combineReducers({
   appState,
@@ -18,5 +18,5 @@ export default combineReducers({
   dAppDataState,
   permissionState,
   addressBookState,
-  crustTokensState,
+  greenchainTokensState,
 });

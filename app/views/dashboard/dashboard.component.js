@@ -24,7 +24,7 @@ import {
 import './styles.css';
 import { RENAME } from '../../constants/options';
 import TokenList from '../../components/token-list';
-import CrustTabs from '../../components/common/crust-tabs';
+import GreenChainTabs from '../../components/common/greenchain-tabs';
 import { HelpCircle, NetworkOfflineIcon } from '../../components/common/icon';
 import FooterWithTwoButton from '../../components/common/footer-with-two-button';
 import { colortheme } from '../../../lib/constants/colors';
@@ -188,13 +188,13 @@ class Dashboard extends Component {
               onImportAccountClick={this.onImportAccountClick}
               style={{
                 color: colortheme[network.value].text.secondary,
-                boxShadow: network.value === 'crust maxwell' ? 'none' : '',
+                boxShadow: network.value === 'greenchain maxwell' ? 'none' : '',
               }}
             />
           </div>
         </div>
         {showOffline && (
-          <div className="crust-offline-container">
+          <div className="greenchain-offline-container">
             <NetworkOfflineIcon colortheme={colortheme[network.value]} />
             <span className="offline-hint">
               {t('OfflineDescription')}
@@ -291,7 +291,7 @@ class Dashboard extends Component {
         )}
         {!showOffline && (
           <>
-            <CrustTabs
+            <GreenChainTabs
               value={value}
               onChange={this.handleChange}
               labels={tLabels}

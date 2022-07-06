@@ -5,29 +5,29 @@ import * as APIConstants from '../../../lib/constants/api';
 import { updateAppLoading } from '../../containers/actions';
 import { promiseTimeout } from '../../utils/helper';
 
-const unlockCrustSuccess = () => ({
-  type: SignInActionTypes.UNLOCK_CRUST_SUCCESS,
+const unlockGreenChainSuccess = () => ({
+  type: SignInActionTypes.UNLOCK_GREENCHAIN_SUCCESS,
 });
 
-const unlockCrustError = error => ({
-  type: SignInActionTypes.UNLOCK_CRUST_ERROR,
+const unlockGreenChainError = error => ({
+  type: SignInActionTypes.UNLOCK_GREENCHAIN_ERROR,
   error,
 });
 
 const clearUnlockError = () => ({
-  type: SignInActionTypes.UNLOCK_CRUST_ERROR,
+  type: SignInActionTypes.UNLOCK_GREENCHAIN_ERROR,
   error: undefined,
 });
 
-export const unlockCrustSuccessFalse = () => ({
-  type: SignInActionTypes.UNLOCK_CRUST_SUCCESS_FALSE,
+export const unlockGreenChainSuccessFalse = () => ({
+  type: SignInActionTypes.UNLOCK_GREENCHAIN_SUCCESS_FALSE,
 });
 
-export const unlockCrust = password => async dispatch => {
+export const unlockGreenChain = password => async dispatch => {
   if (password === '') {
     const error = {};
     error.message = 'Password is required.';
-    dispatch(unlockCrustError(error));
+    dispatch(unlockGreenChainError(error));
   } else {
     try {
       dispatch(updateAppLoading(true));
@@ -40,14 +40,14 @@ export const unlockCrust = password => async dispatch => {
         throw new Error('Time out.');
       }
       dispatch(clearUnlockError());
-      dispatch(unlockCrustSuccess());
+      dispatch(unlockGreenChainSuccess());
     } catch (e) {
       dispatch(updateAppLoading(false));
       const error = {
         message: 'Password is incorrect.',
         stack: e.stack || {},
       };
-      dispatch(unlockCrustError(error));
+      dispatch(unlockGreenChainError(error));
     }
   }
 };

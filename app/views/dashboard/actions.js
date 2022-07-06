@@ -15,7 +15,7 @@ import * as AppActions from '../../containers/actions';
 import * as SignInActions from '../sign-in/actions';
 import { clearHashKey } from '../../api/on-boarding';
 import * as NavConstants from '../../constants/navigation';
-import { CRUST_MAXWELL_NETWORK, CRUST_NETWORK } from '../../../lib/constants/networks';
+import { GREENCHAIN_NETWORK } from '../../../lib/constants/networks';
 
 const updateTokens = tokens => ({
   type: DashboardActionTypes.UPDATE_TOKEN_LIST,
@@ -139,7 +139,7 @@ export const lockApp = () => async dispatch => {
   try {
     dispatch(AppActions.updateAppLoading(true));
     await clearHashKey();
-    dispatch(SignInActions.unlockCrustSuccessFalse());
+    dispatch(SignInActions.unlockGreenChainSuccessFalse());
     dispatch(AppActions.updateAppLoading(false));
     dispatch(AppActions.changePage(NavConstants.SIGN_IN_PAGE));
   } catch (err) {
@@ -173,10 +173,8 @@ export const fetchTransactionHistory = isInit => async (dispatch, getState) => {
   const { transactionHistory, transactionPage } = getState().dashboardReducer;
 
   const response = isInit ? [] : transactionHistory;
-  const networkUrl = network.value === CRUST_MAXWELL_NETWORK.value
-    ? 'maxwell'
-    : network.value === CRUST_NETWORK.value
-      ? 'crust'
+  const networkUrl = network.value === GREENCHAIN_NETWORK.value
+      ? 'greenchain'
       : '';
   if (isInit) {
     dispatch(updateLoadMore(true));
@@ -197,7 +195,7 @@ export const fetchTransactionHistory = isInit => async (dispatch, getState) => {
 
   for (let i = 0; i < response.length; i++) {
     if (response[i].module === 'balances') {
-      response[i].tokenSymbol = 'CRU';
+      response[i].tokenSymbol = 'GRN';
     } else if (response[i].module === 'csm') {
       response[i].tokenSymbol = 'CSM';
     } else if (response[i].module === 'candy') {

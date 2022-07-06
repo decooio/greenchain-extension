@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import CrustInput from '../../common/crust-input';
+import GreenChainInput from '../../common/greenchain-input';
 import AddressBookAdorment from '../address-book-adornment';
 import './styles.css';
 
@@ -30,7 +30,7 @@ export default class TransferToIcon extends Component {
         }}
         {...otherProps}
       >
-        <CrustInput
+        <GreenChainInput
           className="transfer-to-icon-input"
           value={toValue}
           onChange={onChange(propName)}

@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import CrustUnlockPassword from '../../components/common/password/crust-unlock-password';
+import GreenChainUnlockPassword from '../../components/common/password/greenchain-unlock-password';
 import FontRegular from '../../components/common/fonts/font-regular';
 import FooterButton from '../../components/common/footer-button';
-import LogoBig from '../../images/crust-logo-big.svg';
-import LogoBigWhite from '../../images/crust-logo-big-white.svg';
+import LogoBig from '../../images/greenchain-logo-big.svg';
 import { colortheme } from '../../../lib/constants/colors';
-import { CRUST_NETWORK } from '../../../lib/constants/networks';
+import { GREENCHAIN_NETWORK } from '../../../lib/constants/networks';
 import './styles.css';
 
 class SignIn extends Component {
@@ -44,9 +43,9 @@ class SignIn extends Component {
   };
 
   handleClick = () => {
-    const { unlockCrust } = this.props;
+    const { unlockGreenChain } = this.props;
     const { password } = this.state;
-    unlockCrust(password);
+    unlockGreenChain(password);
   };
 
   render() {
@@ -64,7 +63,7 @@ class SignIn extends Component {
           style={{ background: colortheme[network.value].background }}
         >
           <div className="sign-in-img-contianer">
-            <img src={network.value === CRUST_NETWORK.value ? LogoBig : LogoBigWhite} alt="logo2" />
+            <img src={network.value === GREENCHAIN_NETWORK.value ? LogoBig : LogoBig} alt="logo2" />
           </div>
           <FontRegular
             className="sign-in-title"
@@ -72,7 +71,7 @@ class SignIn extends Component {
             style={{ color: colortheme[network.value].text.primary }}
           />
           <div className="sign-in-container-password">
-            <CrustUnlockPassword
+            <GreenChainUnlockPassword
               isError={isError}
               errorText={errorText}
               className="sign-in-password-container"
@@ -99,9 +98,9 @@ class SignIn extends Component {
 export default withTranslation()(SignIn);
 
 SignIn.defaultProps = {
-  unlockCrust: undefined,
+  unlockGreenChain: undefined,
 };
 
 SignIn.propTypes = {
-  unlockCrust: PropTypes.func,
+  unlockGreenChain: PropTypes.func,
 };

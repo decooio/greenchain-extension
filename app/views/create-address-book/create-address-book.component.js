@@ -3,9 +3,9 @@ import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
 import { withTranslation } from 'react-i18next';
 import SubHeader from '../../components/common/sub-header';
 import CreateContactForm from '../../components/address-book/create-contact-form';
-import CrustValidator from '../../utils/crust-validator';
+import GreenChainValidator from '../../utils/greenchain-validator';
 import { ADDRESS_BOOK_PAGE } from '../../constants/navigation';
-import validator from '../../utils/crust-validator/validator';
+import validator from '../../utils/greenchain-validator/validator';
 import { colortheme } from '../../../lib/constants/colors';
 import './styles.css';
 
@@ -28,8 +28,8 @@ class CreateAddressBook extends Component {
       lname: '',
       network: '',
     };
-    this.lnameValidator = new CrustValidator(validator.lnameValidation);
-    this.fnameValidator = new CrustValidator(validator.fnameValidation);
+    this.lnameValidator = new GreenChainValidator(validator.lnameValidation);
+    this.fnameValidator = new GreenChainValidator(validator.fnameValidation);
     this.addressInputRef = React.createRef();
     this.fnameInputRef = React.createRef();
     this.lnameInputRef = React.createRef();

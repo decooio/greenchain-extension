@@ -89,7 +89,7 @@ export const filterTransactions = async (transactions, network, address) => {
 export const sendOSNotification = async transaction => {
   const { message } = createTransactionToastMessage(transaction);
   const txnDetailURl = `${transaction.internal.network.transactionUrl}/${transaction.txnHash}`;
-  await Notification.createNotification('CRUST', message, txnDetailURl);
+  await Notification.createNotification('GREENCHAIN', message, txnDetailURl);
 };
 
 export const updateTransactionState = async (transaction, txnHash, txnStatus) => {

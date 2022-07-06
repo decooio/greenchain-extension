@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
 import ErrorOutlineOutlinedIcon from '@material-ui/icons/ErrorOutlineOutlined';
 import ArrowBackIosOutlinedIcon from '@material-ui/icons/ArrowBackIosOutlined';
-import CrustValidator from '../../utils/crust-validator';
-import validator from '../../utils/crust-validator/validator';
+import GreenChainValidator from '../../utils/greenchain-validator';
+import validator from '../../utils/greenchain-validator/validator';
 import CreateAccountForm from '../../components/account/create-account-form';
 import CreateAccountSettings from '../../components/account/create-account-settings';
 import FooterButton from '../../components/common/footer-button';
@@ -13,7 +13,7 @@ import * as Account from '../../constants/account';
 import './styles.css';
 import AlertDailog from '../../components/common/alert-dialog';
 import { colortheme } from '../../../lib/constants/colors';
-import { CRUST_NETWORK } from '../../../lib/constants/networks';
+import { GREENCHAIN_NETWORK } from '../../../lib/constants/networks';
 import { CREATE_ACCOUNT_ENTRY_PAGE, MANAGE_ACCOUNT_PAGE } from '../../constants/navigation';
 import { copySeedPhraseMessage } from '../../../lib/services/static-message-factory-service';
 
@@ -40,8 +40,8 @@ class CreateAccount extends Component {
       password: '',
       isOpen: false,
     };
-    this.validator = new CrustValidator(validator.importSeedPhraseValidation);
-    this.aliasValidator = new CrustValidator(validator.aliasValidation);
+    this.validator = new GreenChainValidator(validator.importSeedPhraseValidation);
+    this.aliasValidator = new GreenChainValidator(validator.aliasValidation);
     this.aliasInput = React.createRef();
     this.seedInput = React.createRef();
     this.confirmSeedInput = React.createRef();
@@ -385,7 +385,7 @@ class CreateAccount extends Component {
     return (
       <div
         className="create-account-container"
-        style={{ background: colortheme[network ? network.value : CRUST_NETWORK.value].background }}
+        style={{ background: colortheme[network ? network.value : GREENCHAIN_NETWORK.value].background }}
       >
         <SubHeader
           icon={<ArrowBackIosOutlinedIcon style={{ color: '#858B9C', fontSize: '14px' }} />}
@@ -395,7 +395,7 @@ class CreateAccount extends Component {
           showSettings={false}
           onSubMenuOptionsChange={null}
           isBackIcon
-          colortheme={colortheme[network ? network.value : CRUST_NETWORK.value]}
+          colortheme={colortheme[network ? network.value : GREENCHAIN_NETWORK.value]}
         />
         <CreateAccountForm
           value={formValue}
@@ -418,7 +418,7 @@ class CreateAccount extends Component {
           handleSeedWordsOnBlur={this.handleSeedWordsOnBlur}
           handleConfirmSeedWordsOnBlur={this.handleConfirmSeedWordsOnBlur}
           className="create-account-form"
-          colortheme={colortheme[network ? network.value : CRUST_NETWORK.value]}
+          colortheme={colortheme[network ? network.value : GREENCHAIN_NETWORK.value]}
           onCopySeed={this.onCopySeed}
         />
         <CreateAccountSettings
@@ -436,7 +436,7 @@ class CreateAccount extends Component {
           aliasRef={input => {
             this.aliasInput = input;
           }}
-          colortheme={colortheme[network ? network.value : CRUST_NETWORK.value]}
+          colortheme={colortheme[network ? network.value : GREENCHAIN_NETWORK.value]}
           handleAliasOnBlur={this.handleAliasOnBlur}
           handlePasswordChange={this.handlePasswordChange}
           aliasPassworkPropName="passoword"

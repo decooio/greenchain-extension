@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { withTranslation } from 'react-i18next';
-import CrustPassword from '../../components/common/password/crust-password';
-import CrustInput from '../../components/common/crust-input';
+import GreenChainPassword from '../../components/common/password/greenchain-password';
+import GreenChainInput from '../../components/common/greenchain-input';
 import PasswordAdornment from '../../components/common/password/password-adornment';
 import ContentHeader from '../../components/common/content-header';
 import FooterButton from '../../components/common/footer-button';
-import LogoBig from '../../images/crust-logo-big.svg';
+import LogoBig from '../../images/greenchain-logo-big.svg';
 import { colortheme } from '../../../lib/constants/colors';
-import { CRUST_NETWORK } from '../../../lib/constants/networks';
+import { GREENCHAIN_NETWORK } from '../../../lib/constants/networks';
 import './styles.css';
 
 const errorMessage = 'Must be 8 characters or more in length.';
@@ -143,12 +143,12 @@ class SignUp extends Component {
             "The password is used to protect your Enigma seed phrase(s) so that other Chrome extensions can't access them.",
           )}
         />
-        <CrustPassword
+        <GreenChainPassword
           className="sign-up-password"
           onChange={e => this.handleOnChange('password', e)}
           password={password}
           placeholder={this.props.t('Password')}
-          colortheme={colortheme[CRUST_NETWORK.value]}
+          colortheme={colortheme[GREENCHAIN_NETWORK.value]}
           border
         />
         {isPasswordError ? (
@@ -156,14 +156,14 @@ class SignUp extends Component {
         ) : (
           <span className="place-holder"> </span>
         )}
-        <CrustInput
+        <GreenChainInput
           className="sign-up-password"
           onChange={this.handleOnChange('passwordRepeat')}
           type={showPassword ? 'text' : 'password'}
           placeholder={this.props.t('Repeat Password')}
           value={passwordRepeat}
-          colortheme={colortheme[CRUST_NETWORK.value]}
-          style={{ border: `1px solid ${colortheme[CRUST_NETWORK.value].border}`, borderRadius: 8 }}
+          colortheme={colortheme[GREENCHAIN_NETWORK.value]}
+          style={{ border: `1px solid ${colortheme[GREENCHAIN_NETWORK.value].border}`, borderRadius: 8 }}
           endAdornment={
             <PasswordAdornment
               position="end"

@@ -21,7 +21,7 @@ import {
   LANGUAGE_SETTING_PAGE,
 } from '../constants/navigation';
 import { copyAccountMessage } from '../../lib/services/static-message-factory-service';
-import CrustApp from '../components/crust-app';
+import GreenChainApp from '../components/greenchain-app';
 import './styles.css';
 
 class App extends Component {
@@ -242,7 +242,7 @@ class App extends Component {
     } = this;
 
     return (
-      <CrustApp
+      <GreenChainApp
         className={showGrayBg ? 'app-gray' : 'app'}
         isLoading={isLoading}
         account={account}

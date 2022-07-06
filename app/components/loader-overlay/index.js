@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import BlockUi from 'react-block-ui';
 import './styles.css';
-import CrustLoader from '../common/crust-loader';
+import GreenChainLoader from '../common/greenchain-loader';
 
 export default class LoaderOverlay extends Component {
   constructor(props) {
@@ -18,7 +18,7 @@ export default class LoaderOverlay extends Component {
 
     return (
       <div>
-        <BlockUi tag="div" blocking={isLoading} loader={<CrustLoader />}>
+        <BlockUi tag="div" blocking={isLoading} loader={<GreenChainLoader />}>
           <div className="wallet-loader-page" />
         </BlockUi>
       </div>

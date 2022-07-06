@@ -1,6 +1,6 @@
 import { runtime } from 'extensionizer';
 import {
-  SENDER_CRUST_BG,
+  SENDER_GREENCHAIN_BG,
   SYNC_NETWORK_CONNECTED,
   SYNC_NETWORK_ERROR,
   SYNC_NETWORK_LOADING,
@@ -9,7 +9,7 @@ import {
 export function sendMsg(data) {
   runtime.sendMessage({
     ...data,
-    sender: SENDER_CRUST_BG,
+    sender: SENDER_GREENCHAIN_BG,
   });
 }
 

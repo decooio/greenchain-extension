@@ -160,13 +160,11 @@
   "reasons_2": "2.钱包未升级到最新版本。您可能需要更新版本，或等待新版本发布。",
   "reasons_3": "3.网络或服务器连接出现错误。",
 
-  "Crust Mainnet": "Crust主网",
-  "Crust Maxwell": "Maxwell预览网",
+  "GreenChain Mainnet": "GreenChain主网",
 
   "My Account": "我的账户",
   "Settings": "设置项",
   "Lock": "锁定钱包",
-  "Get CRU": "获取CRU",
 
   "To Address": "转至地址",
   "Max": "最大值"

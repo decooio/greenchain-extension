@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import Avatar from '../../common/identicon';
-import CrustInput from '../../common/crust-input';
+import GreenChainInput from '../../common/greenchain-input';
 import './styles.css';
 
 export default class TransferTo extends Component {
@@ -31,7 +31,7 @@ export default class TransferTo extends Component {
       >
         {/*<Avatar style={{ marginRight: 22 }} value={addressValue} size={size} theme={theme} />*/}
         <div className="transfer-to-input-contianer">
-          <CrustInput
+          <GreenChainInput
             className="transfer-to-input"
             onChange={onChange(propName)}
             placeholder={label}

@@ -7,7 +7,7 @@ import AccountItem from '../../account/account-item';
 import FooterWithTwoButton from '../../common/footer-with-two-button';
 import './styles.css';
 import ClickToCopy from '../../common/click-to-copy';
-import CrustPassword from '../../common/password/crust-password';
+import GreenChainPassword from '../../common/password/greenchain-password';
 
 const Summary = props => (
   <div className={props.className}>
@@ -95,7 +95,7 @@ export default class SignMessage extends Component {
             onCopyData={onCopyData}
             colortheme={colortheme}
           />
-          <CrustPassword
+          <GreenChainPassword
             className="confirm-form-password"
             onChange={e => handleOnChange('password', e)}
             password={password}

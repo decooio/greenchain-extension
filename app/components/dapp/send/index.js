@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
 import { createAccountObject } from '../../../services/wallet-service';
 import FooterWithTwoButton from '../../common/footer-with-two-button';
-import CrustPassword from '../../common/password/crust-password';
+import GreenChainPassword from '../../common/password/greenchain-password';
 import SendToFrom from '../send-to-from';
 import './styles.css';
 
@@ -90,7 +90,7 @@ class Send extends Component {
             </div>
           ))}
         </div>
-        <CrustPassword
+        <GreenChainPassword
           className="confirm-form-password"
           onChange={e => handleOnChange('password', e)}
           password={password}

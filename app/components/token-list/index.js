@@ -3,15 +3,11 @@ import { withTranslation } from 'react-i18next';
 import FontMedium from '../common/fonts/font-medium';
 import FontRegular from '../common/fonts/font-regular';
 import { convertBalanceToShow } from '../../../lib/services/numberFormatter';
-import CruTokenIcon from '../../images/crust-logo-light.svg';
-import CandyTokenIcon from '../../images/candy-icon.svg';
-import CSMTokenIcon from '../../images/csm-icon.svg';
+import GrnTokenIcon from '../../images/greenchain-logo-light.svg';
 import './styles.css';
 
 const iconMap = {
-  CRU: CruTokenIcon,
-  Candy: CandyTokenIcon,
-  CSM: CSMTokenIcon,
+  GRN: GrnTokenIcon,
 };
 
 const typeMap = {
@@ -24,7 +20,7 @@ const typeMap = {
 const createBalance = (type, token, t) => {
   const count = token[type];
   let value;
-  if (token.tokenSymbol !== 'CRU' && token.tokenSymbol !== 'CSM') {
+  if (token.tokenSymbol !== 'GRN') {
     value = count === '-' || !count ? '-' : convertBalanceToShow(count, token.decimals);
     return { value, title: '' };
   }

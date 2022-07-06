@@ -3,7 +3,6 @@ import { bnToBn, formatNumber } from '@polkadot/util';
 import { createType, TypeRegistry } from '@polkadot/types';
 import { Metadata } from '@polkadot/metadata';
 import { base64Decode } from '@polkadot/util-crypto';
-import { typesBundleForPolkadot } from '@crustio/type-definitions';
 import keyring from '@polkadot/ui-keyring';
 import {
   getFeesByPaymentInfo,
@@ -46,8 +45,7 @@ const expandChain = chain => {
     if (Object.keys(types).length > 0) {
       registry.register(types);
       registry.setKnownTypes({
-        types,
-        typesBundle: typesBundleForPolkadot,
+        types
       });
     }
   }
@@ -156,7 +154,7 @@ const createTxnUIObject = async txnPayload => {
         if (item.method === 'transfer' || item.method === 'transferKeepAlive') {
           const tempArgs = item.args.map(i => i.toString());
           inputValue = tempArgs[0];
-          itemArgs = [tempArgs[0], `${convertBalanceToShow(tempArgs[1], 12, 4)} CRU`];
+          itemArgs = [tempArgs[0], `${convertBalanceToShow(tempArgs[1], 12, 4)} GRN`];
           fValue = itemArgs[1];
         } else {
           itemArgs = item.toHuman().args;
@@ -176,7 +174,7 @@ const createTxnUIObject = async txnPayload => {
         const toAddress = sectionName === 'candy' ? target : dest;
         fToAddress = keyring.encodeAddress(toAddress, chain.ss58Format);
         inputValue = sectionName === 'candy' ? bnToBn(amount) : bnToBn(value);
-        const symbol = sectionName === 'candy' ? 'Candy' : sectionName === 'csm' ? 'CSM' : 'CRU';
+        const symbol = sectionName === 'candy' ? 'Candy' : sectionName === 'csm' ? 'CSM' : 'GRN';
         itemArgs = [fToAddress, `${convertBalanceToShow(inputValue, 12, 4)} ${symbol}`];
         fValue = itemArgs[1];
       } else {
@@ -262,7 +260,7 @@ export const validateDappTransaction = async transaction => {
   // const transactionLength = Transaction.SIGNATURE_SIZE;
   const txnType = Transaction.TRANSFER_COINS;
   const tokenSelected = {
-    tokenSymbol: sectionName === 'candy' ? 'Candy' : 'CRU',
+    tokenSymbol: sectionName === 'candy' ? 'Candy' : 'GRN',
   };
   const fees = await getFeesByPaymentInfo(txnType, address, dest, new BN(value), tokenSelected); // in femto
   const balance = await getTokenBalance(address, tokenSelected); // in femto

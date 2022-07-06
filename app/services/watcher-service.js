@@ -1,4 +1,4 @@
-import { CRUST_UPDATE_TIME } from '../../lib/constants/update';
+import { GREENCHAIN_UPDATE_TIME } from '../../lib/constants/update';
 import { Transaction, Tokens } from '../api';
 import { SUCCESS, FAIL } from '../../lib/constants/transaction';
 import {
@@ -46,7 +46,7 @@ export async function updateBalance(store) {
 
     /* eslint-disable */
     for (const token of tokens) {
-      if (token.tokenSymbol === 'CRU') {
+      if (token.tokenSymbol === 'GRN') {
         token.balance = balance.balance;
         token.locked = balance.locked;
         token.reserved = balance.reserved;
@@ -80,7 +80,7 @@ export async function updateAllTokenBalance(store) {
     const { tokens } = store.getState().dashboardReducer;
 
     if (!result || result.length === 0) {
-      const t = tokens.filter(token => token.tokenSymbol === 'CRU');
+      const t = tokens.filter(token => token.tokenSymbol === 'GRN');
       store.dispatch(updateTokenList(t));
       return;
     }
@@ -123,5 +123,5 @@ export async function updateApplicationState(store) {
   await updateApplicationStateHelper(store);
   setInterval(async () => {
     await updateApplicationStateHelper(store);
-  }, CRUST_UPDATE_TIME);
+  }, GREENCHAIN_UPDATE_TIME);
 }

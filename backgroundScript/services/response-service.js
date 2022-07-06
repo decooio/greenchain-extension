@@ -713,10 +713,10 @@ export const disConnectNetwork = (request, sendResponse) => {
   }
 };
 
-export const getCrustTokenList = async (request, sender, sendResponse) => {
+export const getGreenChainTokenList = async (request, sender, sendResponse) => {
   try {
     const { network } = request;
-    if (network && network.value === 'crust maxwell') {
+    if (network && network.value === 'greenchain maxwell') {
       const result = await TokensService.getTokenList();
       sendResponse({ ...success, result });
       return;

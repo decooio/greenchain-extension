@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { withTranslation } from 'react-i18next';
-import CrustInput from '../../common/crust-input';
+import GreenChainInput from '../../common/greenchain-input';
 import DropDown from '../../common/drop-down';
 import FontRegular from '../../common/fonts/font-regular';
 import { convertBalanceToShow } from '../../../../lib/services/numberFormatter';
@@ -54,7 +54,7 @@ class TransferFormAmount extends Component {
         </div>
 
         <div className="transfer-form-amount-input-container">
-          <CrustInput
+          <GreenChainInput
             className="transfer-from-amount-input"
             onChange={onChange(propName)}
             value={value}

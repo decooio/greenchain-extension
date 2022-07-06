@@ -1,11 +1,11 @@
 import * as Types from './action-types';
 import { ACCOUNT_MENU_OPTIONS } from '../../constants/options';
 
-const cruDefault = {
+const grnDefault = {
   balance: '-',
   decimals: 12,
-  tokenName: 'CRU',
-  tokenSymbol: 'CRU',
+  tokenName: 'GRN',
+  tokenSymbol: 'GRN',
 };
 
 const candyDefault = {
@@ -27,7 +27,7 @@ const initialState = {
   transactions: [],
   transactionHistory: [],
   pendingTransfers: [],
-  tokens: [cruDefault, candyDefault, csmDefault],
+  tokens: [grnDefault, candyDefault, csmDefault],
   token: undefined,
   transactionPage: 0,
   loadMore: true,

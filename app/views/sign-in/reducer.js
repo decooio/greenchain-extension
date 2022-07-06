@@ -7,21 +7,21 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case Types.UNLOCK_CRUST_SUCCESS:
+    case Types.UNLOCK_GREENCHAIN_SUCCESS:
       return {
         ...state,
         ...{
           success: true,
         },
       };
-    case Types.UNLOCK_CRUST_SUCCESS_FALSE:
+    case Types.UNLOCK_GREENCHAIN_SUCCESS_FALSE:
       return {
         ...state,
         ...{
           success: false,
         },
       };
-    case Types.UNLOCK_CRUST_ERROR:
+    case Types.UNLOCK_GREENCHAIN_ERROR:
       return {
         ...state,
         ...{

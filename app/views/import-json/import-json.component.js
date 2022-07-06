@@ -6,7 +6,7 @@ import ReactTooltip from 'react-tooltip';
 import FileInput from 'react-simple-file-input';
 import SubHeader from '../../components/common/sub-header';
 import FontRegular from '../../components/common/fonts/font-regular';
-import CrustPassword from '../../components/common/password/crust-password';
+import GreenChainPassword from '../../components/common/password/greenchain-password';
 import FooterButton from '../../components/common/footer-button';
 import { shortenFilename } from '../../services/wallet-service';
 import { CHINESE } from '../../constants/language';
@@ -152,7 +152,7 @@ class ImportJson extends Component {
             className="import-json-text import-json-text-margin1"
             text={`${t('Enter the password previously used to encrypt this account')}:`}
           />
-          <CrustPassword
+          <GreenChainPassword
             className="import-json-password"
             onChange={e => this.handleOnChange('jsonPwd', e)}
             password={jsonPwd}
@@ -185,7 +185,7 @@ class ImportJson extends Component {
               <FontRegular className="import-json-text import-json-text-margin1" text=":" />
             </div>
           )}
-          <CrustPassword
+          <GreenChainPassword
             className="import-json-password"
             onChange={e => this.handleOnChange('walletPwd', e)}
             password={walletPwd}

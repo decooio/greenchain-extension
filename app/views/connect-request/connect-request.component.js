@@ -9,10 +9,8 @@ import { SolidWallet, SolidPlug, File } from '../../components/common/icon';
 import { copyAccountMessage } from '../../../lib/services/static-message-factory-service';
 import { colortheme } from '../../../lib/constants/colors';
 import './styles.css';
-import LogoBig from '../../images/crust-logo-big.svg';
-import LogoBigWhite from '../../images/crust-logo-big-white.svg';
+import LogoBig from '../../images/greenchain-logo-big.svg';
 import { CONNECT_REQUEST_PAGE } from '../../constants/navigation';
-import { CRUST_MAXWELL_NETWORK } from '../../../lib/constants/networks';
 
 const DAppURL = ({
   favIconUrl, url, textColor, ...otherProps
@@ -61,7 +59,7 @@ class ConnectRequest extends Component {
     return (
       <div className="connect-request-header">
         <DAppURL
-          favIconUrl={network.value === CRUST_MAXWELL_NETWORK.value ? LogoBigWhite : LogoBig}
+          favIconUrl={LogoBig}
           url={request.request.metadata.url}
           className="connect-request-dapp-url-container"
           colortheme={colortheme[network.value]}
