@@ -17,8 +17,8 @@ export default class TransactionItem extends Component {
       <div>
         {transaction.status !== DAPP ? (
           <a
-            href={`${network.transactionUrl}${transaction.txnHash}`}
-            target="_blank"
+            // href={`${network.transactionUrl}${transaction.txnHash}`}
+            // target="_blank"
             rel="noopener noreferrer"
             style={{ textDecoration: 'none' }}
           >

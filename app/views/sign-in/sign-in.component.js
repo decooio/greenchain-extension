@@ -67,7 +67,7 @@ class SignIn extends Component {
           </div>
           <FontRegular
             className="sign-in-title"
-            text="Web 3.0 Storage for Metaverse"
+            text="Green Carbon Neutral Blockchain"
             style={{ color: colortheme[network.value].text.primary }}
           />
           <div className="sign-in-container-password">
