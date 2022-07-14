@@ -25,7 +25,7 @@ class ButtonCustom extends Component {
       border: `${this.props.border ? this.props.border : 'none'}`,
       width: `${this.props.width ? this.props.width : '320px'}`,
       background: `${this.props.background ? this.props.background : 'white'}`,
-      color: `${textColor || '#FF8D00'}`,
+      color: `${textColor || '#2F4F4F'}`,
     };
 
     const buttonCustomClassNames = classNames({

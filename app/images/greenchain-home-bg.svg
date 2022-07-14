@@ -4,7 +4,7 @@
     <title>矩形</title>
     <desc>Created with Sketch.</desc>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="greenchain-wallet首页" transform="translate(0.000000, -50.000000)" fill="#FF8D00">
+        <g id="greenchain-wallet首页" transform="translate(0.000000, -50.000000)" fill="#2F4F4F">
             <path d="M0,50 L360,50 L360,205 C300,218.333333 240,225 180,225 C120,225 60,218.333333 0,205 L0,50 Z" id="矩形"></path>
         </g>
     </g>

@@ -78,7 +78,7 @@
 }
 
 .json-file-text-color {
-  color: #FF8D00;
+  color: #2F4F4F;
 }
 
 .json-file-error-msg {
@@ -105,7 +105,7 @@
 .import-json-text1 {
   margin-top: 16px;
   margin-bottom: 5px;
-  color: #FF8D00;
+  color: #2F4F4F;
   font-size: 12px;
 }
 
@@ -113,6 +113,6 @@
   margin-top: 16px;
   margin-bottom: 5px;
   margin-left: 5px;
-  color: #FF8D00;
+  color: #2F4F4F;
   font-size: 12px;
 }

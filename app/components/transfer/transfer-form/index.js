@@ -80,7 +80,7 @@ class TransferForm extends Component {
           backButtonName={backButtonText}
           nextButtonName={nextButtonText}
           nextColor="white"
-          nextBackground="#FF8D00"
+          nextBackground="#2F4F4F"
           backColor="black"
           backBackground="#FFFFFF"
         />

@@ -104,7 +104,7 @@ class CreateAccountEntry extends Component {
                 <ButtonCustom
                   onClick={() => this.handleClick(btn)}
                   width="161px"
-                  border="1px solid #FF8D00"
+                  border="1px solid #2F4F4F"
                 >
                   {t(btn)}
                 </ButtonCustom>
@@ -117,7 +117,7 @@ class CreateAccountEntry extends Component {
                 onClick={() => this.handleClick('back')}
               >
                 <ArrowBackIosOutlinedIcon
-                  style={{ color: isHover ? 'white' : '#FF8D00', fontSize: '14px' }}
+                  style={{ color: isHover ? 'white' : '#2F4F4F', fontSize: '14px' }}
                 />
               </div>
             )}
@@ -126,7 +126,7 @@ class CreateAccountEntry extends Component {
                 <ButtonCustom
                   onClick={() => this.handleClick(btn)}
                   width="137px"
-                  border="1px solid #FF8D00"
+                  border="1px solid #2F4F4F"
                 >
                   {t(btn)}
                 </ButtonCustom>

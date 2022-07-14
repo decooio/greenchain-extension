@@ -4,6 +4,6 @@ import 'loaders.css/loaders.min.css';
 
 export default class GreenChainLoader extends Component {
   render() {
-    return <Loader active type="ball-spin-fade-loader" color="#FF8212" />;
+    return <Loader active type="ball-spin-fade-loader" color="#2F4F4F" />;
   }
 }

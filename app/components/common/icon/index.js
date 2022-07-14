@@ -134,7 +134,7 @@ const SolidWallet = props => (
       style={{
         width: 40,
         height: 35,
-        color: '#FF8D00',
+        color: '#2F4F4F',
         marginTop: 15,
         marginBottom: 14,
       }}

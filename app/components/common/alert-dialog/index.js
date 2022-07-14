@@ -59,7 +59,7 @@ const NextButton = withStyles(() => ({
     textTransform: 'none',
     width: '128px !important',
     color: 'white !important',
-    background: '#FF8D00 !important',
+    background: '#2F4F4F !important',
     borderRadius: '12px',
   },
 }))(MuiButton);

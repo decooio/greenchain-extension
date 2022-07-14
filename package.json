@@ -1,6 +1,6 @@
 {
   "name": "greenchain-wallet",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "GreenChain Wallet",
   "scripts": {
     "dev": "node scripts/dev",

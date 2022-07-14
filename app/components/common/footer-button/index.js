@@ -23,7 +23,7 @@ export default class FooterButton extends Component {
           onClick={onClick}
           custom={custom}
           textColor="white"
-          background="#FF8D00"
+          background="#2F4F4F"
         >
           {name}
         </ButtonCustom>

@@ -25,7 +25,7 @@ class About extends Component {
             <Link
               href={link.url}
               style={{
-                color: '#FF8D00',
+                color: '#2F4F4F',
               }}
             >
               {t(`${link.text}`)}
@@ -62,7 +62,7 @@ class About extends Component {
           <div className="about-button">
             <FooterButton
               style={{
-                background: '#FF8D00',
+                background: '#2F4F4F',
                 color: 'white',
                 height: '38px',
                 borderRadius: '12px',

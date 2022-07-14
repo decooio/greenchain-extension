@@ -4,9 +4,9 @@
   font-style: normal;
   height: 38px;
   width: 320px;
-  color: #FF8D00;
+  color: #2F4F4F;
   border-radius: 4px;
-  border: 1px solid #FF8D00;
+  border: 1px solid #2F4F4F;
   text-transform: none;
 }
 
@@ -17,16 +17,16 @@
 }
 
 .button-xl button:hover, .button-xl button[hover] {
-  background: #FF8D00;
+  background: #2F4F4F;
   color: white;
 }
 
 .button-xl-custom1 button {
   color: white !important;
-  background: #FF8D00;
+  background: #2F4F4F;
 }
 
 .button-xl-custom1 button:hover, .button-xl-custom1 button[hover] {
   background: white;
-  color: #FF8D00 !important;
+  color: #2F4F4F !important;
 }
